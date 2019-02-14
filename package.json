@@ -1,0 +1,21 @@
+{
+  "name": "kst-hancock-web-landing",
+  "version": "1.0.0",
+  "description": "Hancock web landing and documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.kickstartteam.es:7999/han/kst-hancock-web-landing.git"
+  },
+  "keywords": [
+    "Hancock",
+    "Blockchain",
+    "DLT",
+    "Ethereum"
+  ],
+  "author": "",
+  "license": "ISC"
+}
