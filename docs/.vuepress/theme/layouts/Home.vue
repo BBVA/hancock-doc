@@ -83,43 +83,75 @@
         </section>
         <section class="section fifth-section">
             <div class="content container">
-                <div class="mini-title mini-blue">
-                    ABOUT US
-                </div>  
-                <hr>
-                <div>
-                    We are passionate about technology and science that we love to solve challenges to improve prosperity.
-                </div>
-                <div class="border-blue">
+                <div class="fifth-section-text">
+                    <div class="mini-title mini-blue">
+                        ABOUT US
+                    </div>  
+                    <hr>
+                    <div>
+                        We are passionate about technology and science that we love to solve challenges to improve prosperity.
+                    <div class="border-blue">
 
+                    </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="section sixth-section">
+            <div class="content container">
+                <div class="rectangle-white">
+                    <div class="description-Copy-5">
+                        Take the step to grow your business in an easy and fast way
+                    </div>
+                    <!-- <a href="http://google.com" class="button">API DOCUMENTATION</a> -->
+                </div>
+            </div>
+        </section>
+        <section class="section footer">
+            <div class="content container">
+                <img src="../img/group-22.svg" class="group-22">
             </div>
         </section>
     </div>
 </template>
 <style lang="css" scoped>
 
+a.button {
+    color: white;
+    background-color: #ff1654;
+    border-radius: 5px;
+    padding: 8px;  
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
 .box1 {
     display: inline-block;
     position: relative;
 }
 .box1::before {
-        content: '';
-        display: block;
-        width: 50%;
-        height: 70%;
-        position: absolute;
-        left: -15px;
-        top: -15px;
-        border: 6px solid #00b9f7;
-        z-index: -1;
-    }
+    content: '';
+    display: block;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    border: 6px solid #00b9f7;
+    z-index: -1;
+}
 
 .elements-hancock {
     box-shadow: 0 12px 42px 12px rgba(0, 0, 0, 0.08), 0px 7px 11px 1px rgba(0, 0, 0, 0.3);
     width: 55%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 50px;
 }
 
 .elements-hancock .col-sm-6{
@@ -139,6 +171,11 @@
     border-right: 1px solid lightgrey;
 }
 
+.fifth-section-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
 .fotolia {
   width: 80%;
   object-fit: contain;
@@ -151,7 +188,14 @@
 }
 
 .border-blue {
-
+    display: block;
+    margin-top: 30px;
+    width: 60%;
+    height: 200px;
+    border: 6px solid #00b9f7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
 
 .borders-copy-2 {
@@ -239,6 +283,17 @@
   color: white;
 }
 
+.rectangle-white {
+  width: 960px;
+  height: 110px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .description-Copy {
     font-size: 14px;
     font-weight: normal;
@@ -251,6 +306,16 @@
     width: 541px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.description-Copy-5 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #4d4d4e;
 }
 
 hr { 
@@ -277,6 +342,22 @@ hr {
 .fifth-section {
     background-color: #f4f4f4;
 }
+
+.sixth-section {
+    background-image: url("../img/bitmap_2.png");
+    background-size: cover;
+}
+
+.footer {
+    background-color: #606971;
+}
+
+.group-22 {
+  width: 163px;
+  height: 31px;
+  object-fit: contain;
+}
+
 </style>
 
 <script>
