@@ -100,10 +100,18 @@
         <section class="section sixth-section">
             <div class="content container">
                 <div class="rectangle-white">
-                    <div class="description-Copy-5">
-                        Take the step to grow your business in an easy and fast way
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="description-Copy-5">
+                            Take the step to grow your business in an easy and fast way
+                        </div>
                     </div>
-                    <!-- <a href="http://google.com" class="button">API DOCUMENTATION</a> -->
+                    <div class="col-sm-4">
+                        <div class="add-padding">
+                            <a href="http://google.com" class="button">API DOCUMENTATION</a>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -152,6 +160,10 @@ a.button {
     margin-right: auto;
     position: relative;
     top: 50px;
+}
+
+.add-padding {
+    padding:15px;
 }
 
 .elements-hancock .col-sm-6{
@@ -253,45 +265,44 @@ a.button {
 }
 
 .second-text {
-  font-size: 18px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
 }
 
 .mini-title {
-  font-size: 28px;
-  margin-top: 50px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
 }
 
 .mini-blue {
-  color: #005792;
+    color: #005792;
 }
 
 .mini-white {
-  color: white;
+    color: white;
 }
 
-.rectangle-white {
-  width: 960px;
-  height: 110px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.rectangle-white {    
+    width: 60%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .description-Copy {
@@ -303,7 +314,7 @@ a.button {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    width: 541px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -316,6 +327,7 @@ a.button {
   line-height: 1.5;
   letter-spacing: normal;
   color: #4d4d4e;
+  padding: 15px;
 }
 
 hr { 
