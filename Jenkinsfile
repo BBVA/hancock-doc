@@ -5,9 +5,14 @@
 nodePipeline{
 
       // Make some custom commands (generate unit tests, etc.)
-      stage("Custom Stage"){
-        container("node"){
-          sh "node --version"
+      stage('Build'){
+        container('node'){
+          sh """
+            yarn cache clean --force
+            yarn install
+            export NODE_ENV=production        
+            yarn docs:build
+          """
         }
       }
 
@@ -16,5 +21,5 @@ nodePipeline{
       docker_shuttle_stage()
 
       // Deploy the image to Kubernetes
-      deploy_shuttle_stage()
+      deploy_shuttle_stage(project: "blockchainhub", environment: "develop", askForConfirmation: false)
 }
