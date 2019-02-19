@@ -21,5 +21,5 @@ nodePipeline{
       docker_shuttle_stage()
 
       // Deploy the image to Kubernetes
-      deploy_shuttle_stage(project: "blockchainhub", environment: "develop", askForConfirmation: false)
+      deploy_shuttle_stage(project: "hancock", environment: "develop", askForConfirmation: false)
 }
