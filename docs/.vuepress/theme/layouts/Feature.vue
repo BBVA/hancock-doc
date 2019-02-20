@@ -7,8 +7,8 @@
 </template>
 <style>
 .feature {
-  width: 241px;
-  height: 201px;
+  width: 70%;
+  min-height: 201px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,6 +21,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #00b9f7;
+  font-family: 'Open Sans';
 }
 
 .description{
@@ -32,6 +33,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #999999;
+  font-family: 'Open Sans';
 }
 
 .image{

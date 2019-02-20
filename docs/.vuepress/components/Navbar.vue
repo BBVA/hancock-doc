@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-fixed-top">
+  <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
         <button
@@ -35,10 +35,15 @@
 <style lang="css" scoped>
 .navbar {
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
 }
 
 .navbar-nav {
   float: right;
+}
+
+.nav li a:hover {
+  background-color: transparent;
 }
 
 .hancock_icon_white {
@@ -52,8 +57,6 @@
 }
 
 .SUPPORT {
-  width: 80px;
-  height: 24px;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -65,8 +68,6 @@
 }
 
 .API-DOC {
-  width: 71px;
-  height: 24px;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;

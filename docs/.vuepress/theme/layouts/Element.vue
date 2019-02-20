@@ -11,6 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  min-height: 203px;
 }
 .title {
   font-size: 16px;
@@ -21,6 +22,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #005792;
+  font-family: 'Open Sans';
 }
 
 .description{
@@ -32,6 +34,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #999999;
+  font-family: 'Open Sans';
 }
 
 .image{
