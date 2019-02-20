@@ -51,7 +51,7 @@
                <div class="row">
                   <div class="col-sm-6">
                      <div class="margin-left">
-                        <div class="mini-title mini-blue float-left">ROOT</div>
+                        <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
                         <hr class="float-left no-margin-left">
                         <div class="float-left">
                            Hancock is a <b>research product</b> conceived within BBVA - New Digital Business Research Lab.
@@ -255,10 +255,10 @@ a.button {
 .box1::before {
     content: '';
     display: block;
-    width: 50%;
-    height: 70%;
+    width: 42%;
+    height: 85%;
     position: absolute;
-    left: -15px;
+    left: 4px;
     top: -15px;
     border: 6px solid #00b9f7;
     z-index: -1;
@@ -300,14 +300,15 @@ a.button {
 }
 
 .fotolia {
-  width: 80%;
-  object-fit: contain;
+    width: 70%;
+    margin-left: 20px;
+    object-fit: contain;
 }
 
 .Outline-Icon {
-  width: 37px;
-  height: 38px;
-  object-fit: contain;
+    width: 37px;
+    height: 38px;
+    object-fit: contain;
 }
 
 .border-blue {
@@ -494,6 +495,47 @@ hr {
   width: 163px;
   height: 31px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .We-provide-simplicit {
+    width: 100%;
+  }
+
+  .box1 {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .small-screen-root {
+    text-align: center!important;
+    margin-top: -30px;
+  }
+
+  .no-margin-left{
+    margin-left: auto;
+  }
+
+  .elements-hancock{
+      width: 80%;
+  }
+
+  .element {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    min-height: 203px;
+    padding-bottom: 10px;
+  }
+
+  .border-right-grey{
+      border: 0px;
+  }
+
+  .border-bottom-grey {
+      border: 0px;
+  }
 }
 
 </style>

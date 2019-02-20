@@ -46,6 +46,12 @@
   background-color: transparent;
 }
 
+.nav>li>a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  color: #f4cf93;
+}
+
 .hancock_icon_white {
   opacity: 1 !important;
   object-fit: contain;
