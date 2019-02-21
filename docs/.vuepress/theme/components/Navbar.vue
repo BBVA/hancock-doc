@@ -55,7 +55,7 @@
 .hancock_icon_white {
   opacity: 1 !important;
   object-fit: contain;
-  background-image: url("../theme/img/hancock_home.svg");
+  background-image: url("../img/hancock_home.svg");
   margin-top: 5px;
   margin-bottom: 5px;
   width: 224px;

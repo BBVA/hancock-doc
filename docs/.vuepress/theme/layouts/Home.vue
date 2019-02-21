@@ -541,9 +541,9 @@ hr {
 </style>
 
 <script>
-import Feature from "./Feature";
-import Element from "./Element";
-import Navbar from '../../components/Navbar.vue';
+import Feature from "../components/Feature";
+import Element from "../components/Element";
+import Navbar from '../components/Navbar.vue';
 
 import reusability from "../img/reusability.svg";
 import simplify from "../img/simplify.svg";
