@@ -23,7 +23,7 @@
             <a class="API-DOC" href="#">Docs</a>
           </li>
           <li>
-            <a class="SUPPORT" href="#">Support</a>
+            <a class="SUPPORT" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>
           </li>
         </ul>
       </div>
