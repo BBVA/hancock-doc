@@ -20,7 +20,7 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a class="API-DOC" href="/guide/dlt-adapter/">Docs</a>
+            <a class="API-DOC" href="/guide/getting-started/">Docs</a>
           </li>
           <li>
             <a class="SUPPORT" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>

@@ -163,5 +163,6 @@ $textColor = #ffffff
     .nav-item > a, .nav-item > a:hover, .nav-item > a.router-link-active
       color white
       font-size: 16px
+      font-weight 600
 
 </style>

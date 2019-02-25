@@ -3,11 +3,13 @@ module.exports = {
   themeConfig: {
     logo: '/logo.svg',
     nav: [
-      { text: 'API Docs', link: '/guide/' },
+      { text: 'Guide', link: '/guide/' },
       { text: 'Github', link: 'https://github.com/BBVA/hancock-dlt-adapter' },
     ],
     search: false,
+    editLinks: false,
     sidebar: [
+      ['/guide/getting-started/', 'Getting Started'],
       ['/guide/dlt-adapter/', 'DLT Adapter'],
       ['/guide/wallet-hub/', 'Wallet Hub'],
       ['/guide/dlt-broker/', 'DLT Broker'],

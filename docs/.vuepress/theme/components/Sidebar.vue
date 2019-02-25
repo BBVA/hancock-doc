@@ -67,7 +67,7 @@ export default {
   .nav-links
     display none !important
 
-  .sidebar-links > li > a.sidebar-link,
+  .sidebar-links li a.sidebar-link,
   .sidebar-heading.clickable
     color: white 
     font-size 14px
