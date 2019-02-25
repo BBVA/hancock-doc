@@ -4,14 +4,20 @@ title: DLT Adapter
 
 # Hancock DLT Adapter
 
-Hancock is a research product conceived within BBVA New digital business - R&D that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock can be divided into three main components:
+Microservice belonging to Hancock's ecosystem, which adapts transactions described in a common schema to the different blockchain implementatations' internal schemas.
 
-- DLT Adapter - Keep it simple Interface to abstract interaction with different DLT networks.
+DLT Adapter aims to provide a high-level interface to operations that can be performed on DLT Networks. Allow operations like get balance, and adapt transfer operations to send to dlt network.
 
-- Wallet Hub - Enroute Interactions Enable connect their signer wallets, or wallet service providers, to the wallet hub, that will then route any ready-to-sign transaction.
+Offer different operations to manage smart contracts:
+ - Deploy (Useful for deploying new contracts with the same interface)
+ - Call/Query (read operations)
+ - Invoke/Apply (write operations)
 
-- DLT Broker - Real time notifications Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiently subscribe to blockchain asynchronous events to avoid constant request of status.
+It holds a registry for human-friendly smart contract management/interaction.
 
+# Api documentation
+
+DLT Adapter provides some endpoints to interact with the blockchain, allowing read and adpat different operations with dlt. Take a look at the diferent sections of the API documentation to see examples of use.
 
 ```bash
 

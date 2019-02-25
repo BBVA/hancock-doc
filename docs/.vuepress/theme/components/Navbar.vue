@@ -159,7 +159,6 @@ $textColor = #ffffff
   .links
     background-color transparent
     color white
-    top 0
 
     .nav-item > a, .nav-item > a:hover, .nav-item > a.router-link-active
       color white

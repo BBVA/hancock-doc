@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-fixed-top">
+  <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
         <button
@@ -20,10 +20,10 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a class="API-DOC" href="#">Docs</a>
+            <a class="API-DOC" href="/guide/dlt-adapter/">Docs</a>
           </li>
           <li>
-            <a class="SUPPORT" href="#">Support</a>
+            <a class="SUPPORT" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>
           </li>
         </ul>
       </div>
@@ -35,10 +35,21 @@
 <style lang="css" scoped>
 .navbar {
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
 }
 
 .navbar-nav {
   float: right;
+}
+
+.nav li a:hover {
+  background-color: transparent;
+}
+
+.nav>li>a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  color: #f4cf93;
 }
 
 .hancock_icon_white {
@@ -52,8 +63,6 @@
 }
 
 .SUPPORT {
-  width: 80px;
-  height: 24px;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -65,8 +74,6 @@
 }
 
 .API-DOC {
-  width: 71px;
-  height: 24px;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
