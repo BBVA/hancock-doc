@@ -12,6 +12,8 @@ To be able to sign transactions in blockchain we need a private key. To avoid ce
 
 Wallet-HUB provides some endpoints to interact with the blockchain, allowing send and sing transactions with an external signer to a specific DLT. Take a look at the diferent sections of the API documentation to see examples of use.
 
+<a href="https://bbva.github.io/hancock-wallet-hub/api.html">API Documentation</a>
+
 ```bash
 
 curl www.google.es

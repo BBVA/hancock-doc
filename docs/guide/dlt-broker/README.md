@@ -20,7 +20,9 @@ The hancock broker service is accessible by an standard web socket interface. Yo
 
 # Api documentation
 
-Documentation about the async API can be found in this link
+Take a look at the diferent sections of the API documentation to see examples of use:
+
+<a href="https://bbva.github.io/hancock-dlt-broker/api.html">API Documentation</a>
 
 ```bash
 

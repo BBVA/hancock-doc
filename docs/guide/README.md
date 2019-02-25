@@ -14,7 +14,7 @@ Hancock can be divided into three main components:
 
 - DLT Broker - Real time notifications Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiently subscribe to blockchain asynchronous events to avoid constant request of status.
 
-we also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. 
+We also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. 
 
 <img :src="$withBase('/hancock.png')" alt="hancock">
 
@@ -24,8 +24,15 @@ Every blockchain has its own interfaces, even though they share a common functio
 
 Most applications have poor management of digital signatures, private keys and wallet management. Poor management of blockchain asynchronous nature, with delay in confirmations.
 
+Hancock is like a bridge for blockchains, offer a sdk and an API to manage connections to blockchain, and you can focus on develop your bussiness application.
+
 # Current blockchains supported
 
  - Ethereum
 
 # Next steps
+
+We are working on integrate other blockchains networks to Hancock language. 
+
+Next blockchain networks:
+ - Bitcoin
