@@ -1,48 +1,37 @@
 # Smart contract
 
-ERC20 is a standard smart contract template for Ethereum fungible tokens: link
-
+Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. DLT Adapter offer a set of api operations to manage all options with smart contracts in a dlt network.
 
 # Deploy Smart Contract
 
-Check the available accounts in the Ethereum Client and select the address to operate with:
+First of all, we need to check the available accounts and select the address with enough balance to operate with, you can use the <a href="./Common.md/">Common</a> operations of the commponent.
 
-    Ethereum JSON-RPC > Eth > Accounts
+Once we have our smart contract developed, we can adapt a Smart Contract deployment order to get the response raw to deploy the smart contract on dlt network. We need a raw serialized binary compilation and ABI of the contract stored in an accessible point, the constructor method of the contract, optionally the params of this method and finally the selected address as sender.
 
-You may check balance of the selected account:
+You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-deploy-smartcontract">link</a>.
 
-    Ethereum JSON-RPC > Eth > getBalance
+To deploy the adapted deployment transaction, we can use the send transaction call of <a href="../wallet-hub/">Wallet-Hub</a> commponent to finish the deployment.
 
-Adapt a Smart Contract deployment (Voucher Smart Contract)
+To check the smart contract deployment transaction, we can call to <a href="../dlt-broker/">Dlt Broker</a> commponent, with the selected address as sender to get the contract address.
 
-    Hancock > DLT-Adapter > Deploy
-    Use the selected address as sender
-
-Deploy the adapted deployment transaction
-    
-    Ethereum JSON-RPC > Eth > sendTransaction
-    Replace params with adapted transaction
-
-Check the smart contract deployment transaction on Ethereum Explorer
-
-Save the contract address, you will need it to register the smart contract
+Save the contract address, you will need it to register the smart contract.
 
 # Register Smart Contract on Hancock
 
-Check the registered smart contracts
+Once we finish the deploy, we can register the smart contract to operate with it in Hancock.
 
-    Hancock > DLT-Adapter > Find
+You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#register-smartcontract">link</a>.    
 
-Register the smart contract deployed in 1a
+# Find a Smart Contract
 
-    Hancock > DLT-Adapter > Register
-    The ABI is under BaseURL.abi
-    
-Verify that the smart contract is now registered
-    Hancock > DLT-Adapter > Find
+To check the registered smart contracts, we can get a list of all contracts registered in Hancock, use the call descripted in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#list-of-smartcontracts">link</a>.
 
 # Invoke a Smart Contract
 
-Adapt a Smart Contract invocation (Token transfer) (alias: erc20-tkn)
+After deploy and register our contract, we can use all operations of the contract with invoke operation.
 
-    Hancock > DLT-Adapter > Invoke by Alias
+We can adapt the invoke order to get the response raw to invoke an operation of the contract. We need the operation name, optionally the params of the method and finally the selected address as sender.
+
+You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-of-smartcontract">link</a>.
+
+Anyway we can operate with contract deployments on dlt network without register the contract before in Hancock. In that case, beside of the parameters, we need the abi of the contract, check <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-with-abit">the technical call</a> to know more details.

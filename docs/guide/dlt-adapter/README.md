@@ -12,7 +12,7 @@ DLT Adapter aims to provide a high-level interface to operations that can be per
 
 Allow operations like get balance, and adapt transfer operations to send to dlt network.
 
-To Know more consult <a href="/guide/dlt-adapter/Common.md/">Common operations</a> over blockchain network. 
+To Know more consult <a href="./Common.md/">Common operations</a> over blockchain network. 
 
 ## Smartcontracts operations
 
@@ -23,19 +23,19 @@ Offer different operations to manage smart contracts:
 
 It holds a registry for human-friendly smart contract management/interaction.
 
-To Know more consult <a href="/guide/dlt-adapter/SmartContract.md/">SmartContract operations</a> over blockchain network. 
+To Know more consult <a href="./SmartContract.md/">SmartContract operations</a> over blockchain network. 
 
 ## Token operations
 
 Facilitate a simply interface to work with a special case of Ethereum smartcontracts, with common ERC20 interface.
 
-To Know more consult <a href="/guide/dlt-adapter/Token.md/">Token operations</a> over Ethereum network. 
+To Know more consult <a href="./Token.md/">Token operations</a> over Ethereum network. 
 
 ## Hancock protocol
 
 Use Hancock protocol to encode and decode operations and work with data on qr code.
 
-To Know more consult <a href="/guide/dlt-adapter/Protocol.md/">Protocol operations</a>. 
+To Know more consult <a href="./Protocol.md/">Protocol operations</a>. 
 
 # Api documentation
 
