@@ -1,8 +1,26 @@
 module.exports = {
   title: "Hancock",
-  head: [
-    ['link', {rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'}],
-    ['link', {rel: 'scrypt', href: 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'}],
-    ['link', {rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css'}]
-  ]
+  themeConfig: {
+    logo: '/logo.svg',
+    nav: [
+      { text: 'API Docs', link: '/guide/' },
+      { text: 'Github', link: 'https://github.com/BBVA/hancock-dlt-adapter' },
+    ],
+    search: false,
+    sidebar: [
+      ['/guide/dlt-adapter/', 'DLT Adapter'],
+      ['/guide/wallet-hub/', 'Wallet Hub'],
+      ['/guide/dlt-broker/', 'DLT Broker'],
+      {
+        title: 'SDK',
+        path: '/guide/sdk/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/guide/sdk/nodejs/', 'NodeJs'],
+          ['/guide/sdk/java/', 'Java']
+        ]
+      }
+    ]
+  }
 }
