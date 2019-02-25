@@ -2,7 +2,7 @@
    <div>
       <section class="section">
          <section class="section first-section">
-            <Navbar/>
+            <NavbarHome/>
             <div class="content container">
                <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
                <h1 class="We-provide-simplicit">
@@ -543,7 +543,7 @@ hr {
 <script>
 import Feature from "../components/Feature";
 import Element from "../components/Element";
-import Navbar from '../components/Navbar.vue';
+import NavbarHome from "../components/NavbarHome.vue";
 
 import reusability from "../img/reusability.svg";
 import simplify from "../img/simplify.svg";
@@ -553,7 +553,7 @@ import hub from "../img/hub.svg";
 
 export default {
   components: {
-    Navbar,
+    NavbarHome,
     Feature,
     Element
   },
@@ -568,3 +568,7 @@ export default {
   }
 };
 </script>
+<style> 
+  @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
+  @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css");
+</style>
