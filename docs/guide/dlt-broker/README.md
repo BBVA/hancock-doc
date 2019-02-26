@@ -73,14 +73,9 @@ An example of configuration of the most important vars:
 
 ## Using the service
 
-The hancock broker service is accessible by an standard web socket interface. You can test it in a browser console, as follows:
+The hancock broker service is accessible by an standard web socket interface. You can test it in a browser console.
 
-```javascript
-let address = "0xd2Bb4b9C30DE543C2a247E818391F37A98E62D3F";
-let sender = "0xF0fF42D561124786be9902206a758cDeE6f3D271";
-
-ws = new WebSocket(`ws://localhost:3009/ethereum/subscribe?address=${address}&sender=${sender}`)
-```
+To Know more consult <a href="./Broker.md/">Broker options</a>. 
 
 ## Api documentation
 
