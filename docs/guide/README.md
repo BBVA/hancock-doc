@@ -16,7 +16,7 @@ Hancock can be divided into three main components:
 
 We also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. 
 
-<img :src="$withBase('/hancock.png')" alt="hancock">
+<img style="display: block; margin: 2rem auto" alt="hancock commponents"  src="../img/hancock_commponent.png">
 
 # Motivation
 
