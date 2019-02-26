@@ -1,90 +1,168 @@
 <template>
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button
-          type="button"
-          class="navbar-toggle collapsed"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-expanded="false"
-          aria-controls="navbar"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand hancock_icon_white" href="#"></a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a class="API-DOC" href="#">Docs</a>
-          </li>
-          <li>
-            <a class="SUPPORT" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
+  <header class="navbar">
+    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+
+    <router-link
+      :to="$localePath"
+      class="home-link"
+    >
+      <img
+        class="logo"
+        v-if="$site.themeConfig.logo"
+        :src="$withBase($site.themeConfig.logo)"
+        :alt="$siteTitle"
+      >
+      <span
+        ref="siteName"
+        class="site-name"
+        v-if="false && $siteTitle"
+        :class="{ 'can-hide': $site.themeConfig.logo }"
+      >{{ $siteTitle }}</span>
+    </router-link>
+
+    <div
+      class="links"
+      :style="linksWrapMaxWidth ? {
+        'max-width': linksWrapMaxWidth + 'px'
+      } : {}"
+    >
+      <AlgoliaSearchBox
+        v-if="isAlgoliaSearch"
+        :options="algolia"
+      />
+      <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
+      <NavLinks class="can-hide"/>
     </div>
-  </nav>
+  </header>
 </template>
 
-<style lang="css" scoped>
-.navbar {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 0px;
+<script>
+import SidebarButton from '@parent-theme/components/SidebarButton.vue'
+import AlgoliaSearchBox from '@AlgoliaSearchBox'
+import SearchBox from '@SearchBox'
+import NavLinks from '@parent-theme/components/NavLinks.vue'
+
+export default {
+  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
+
+  data () {
+    return {
+      linksWrapMaxWidth: null
+    }
+  },
+
+  mounted () {
+    const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
+    const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'))
+    const handleLinksWrapWidth = () => {
+      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
+        this.linksWrapMaxWidth = null
+      } else {
+        this.linksWrapMaxWidth = this.$el.offsetWidth - NAVBAR_VERTICAL_PADDING
+          - (this.$refs.siteName && this.$refs.siteName.offsetWidth || 0)
+      }
+    }
+    handleLinksWrapWidth()
+    window.addEventListener('resize', handleLinksWrapWidth, false)
+  },
+
+  computed: {
+    algolia () {
+      return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+    },
+
+    isAlgoliaSearch () {
+      return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    }
+  }
 }
 
-.navbar-nav {
-  float: right;
+function css (el, property) {
+  // NOTE: Known bug, will return 'auto' if style value is 'auto'
+  const win = el.ownerDocument.defaultView
+  // null means not to return pseudo styles
+  return win.getComputedStyle(el, null)[property]
 }
+</script>
 
-.nav li a:hover {
-  background-color: transparent;
-}
+<style lang="stylus">
+$navbar-vertical-padding = 0.7rem
+$navbar-horizontal-padding = 1.5rem
 
-.nav>li>a:focus {
-  text-decoration: none;
-  background-color: transparent;
-  color: #f4cf93;
-}
+.navbar
+  padding $navbar-vertical-padding $navbar-horizontal-padding
+  line-height $navbarHeight - 1.4rem
+  a, span, img
+    display inline-block
+  .logo
+    height $navbarHeight - 1.4rem
+    min-width $navbarHeight - 1.4rem
+    margin-right 0.8rem
+    vertical-align top
+  .site-name
+    font-size 1.3rem
+    font-weight 600
+    color $textColor
+    position relative
+  .links
+    padding-left 1.5rem
+    box-sizing border-box
+    background-color white
+    white-space nowrap
+    font-size 0.9rem
+    position absolute
+    right $navbar-horizontal-padding
+    top $navbar-vertical-padding
+    display flex
+    .search-box
+      flex: 0 0 auto
+      vertical-align top
 
-.hancock_icon_white {
-  opacity: 1 !important;
-  object-fit: contain;
-  background-image: url("../img/hancock_home.svg");
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 224px;
-  height: 42px;
-}
+@media (max-width: $MQMobile)
+  .navbar
+    padding-left 4rem
+    .can-hide
+      display none
+    .links
+      padding-left 1.5rem
+</style>
 
-.SUPPORT {
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
+<style lang="stylus">
+$color-1 = #32abd7
+$color-2 = #3a759f
+$textColor = #ffffff
 
-.API-DOC {
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
+.navbar
+  display flex
+  align-items center
+  border none !important
+  background-image linear-gradient(132deg, $color-1 0px, $color-1 206px, $color-2 208px, $color-2 100%);
+  background-attachment fixed
 
-a {
-  text-shadow: none !important;
-}
+  .site-name
+    font-size 2.3rem
+    font-weight 400
+    color $textColor
+    position relative
+    text-transform uppercase
+
+  .logo
+    height 42px
+  
+  .home-link
+    line-height 1em
+
+  .sidebar-button
+    color #fff
+    top 1.8rem
+
+  .links
+    background-color transparent
+    color white
+
+    .nav-item > a, .nav-item > a:hover, .nav-item > a.router-link-active
+      color white
+      font-size: 16px
+      font-weight 600
+
 </style>
