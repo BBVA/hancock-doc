@@ -35,3 +35,13 @@ This operation give us a response with everything you need to sign and send to e
 This operation allow to owner approve a specific amount of tokens for spender. This spender can perform the "transferFrom" operation until the maximum amount approved.
 
 This operation give us a response with everything you need to sign and send to ethereum dlt. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-token-approve">link</a>. 
+
+## Allowance
+
+To consult the amount of tokens approved by the owner that can be transferred with a "transferFrom" operation from spender's account. You need to call this operation, that return the amount of approved value. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-allowance">link</a>. 
+
+## Transfer from
+
+You can use "transferFrom" operation to transfer tokens from an account with enough balance to a specific account, the spender that invoke the operation must have sufficient allowance to transfer. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-token-transferfrom">link</a>. 
+
+Remember that after get the response, we can sent the response to sign and send it to dlt network, you can use the <a href="../wallet-hub/">Wallet-Hub</a> commponent to finish the operations.
