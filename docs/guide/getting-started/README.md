@@ -15,8 +15,6 @@ Provides a websocket connection that propagates any DLT event the user is subscr
 
 To ease the orchestration between hancock's services and speed up the integration with them, we are providing a set of SDKs in different languages. You can read more about it in the [Hancock SDK](../sdk/) section.
 
-## High level view
-
 Here is a big picture from the point of view of an application that is using hancock's ecosystem.
 
 <img style="display: block; margin: 2rem auto" alt="Hancock high level view" src="../../img/hancock_dia1.png">
