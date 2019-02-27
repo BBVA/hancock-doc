@@ -4,7 +4,7 @@ Smart contracts allow the performance of credible transactions without third par
 
 ## Deploy Smart Contract
 
-First of all, we need to check the available accounts and select the address with enough balance to operate with, you can use the <a href="./Common.md/">Common</a> operations of the commponent.
+First of all, we need to check the available accounts and select the address with enough balance to operate with, you can use the <a href="./Common/">Common</a> operations of the commponent.
 
 Once we have our smart contract developed, we can adapt a Smart Contract deployment order to get the response raw to deploy the smart contract on dlt network. We need a raw serialized binary compilation and ABI of the contract stored in an accessible point, the constructor method of the contract, optionally the params of this method and finally the selected address as sender.
 

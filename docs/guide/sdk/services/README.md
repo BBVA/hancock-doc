@@ -10,11 +10,14 @@ Main interface to interact with Hancock's ethereum interface:
     HancockConfig config = new HancockConfig.Builder()
                     .withEnv(AppConstants.FLAVOR)
                     .withNode(AppConstants.ETHEREUM_NODE_HOST, AppConstants.ETHEREUM_NODE_PORT)
-					.withAdapter(AppConstants.HANCOCK_ADAPTER_HOST, AppConstants.HANCOCK_ADAPTER_BASE, AppConstants.HANCOCK_ADAPTER_PORT)
-					.withWallet(AppConstants.HANCOCK_WALLET_HOST, AppConstants.HANCOCK_WALLET_BASE, AppConstants.HANCOCK_WALLET_PORT)
+                    .withAdapter("https://hancock-url.es", "/dlt-adapter", 443)
+                    .withBroker("ws://hancock-url", "", 80)
+                    .withWallet("https://hancock-url.es", "/wallet-hub", 443)
                     .build();
 	new EthereumClient(config);
 ```
+
+## Services
 
 All services included in Ethereum client.
 
@@ -31,4 +34,10 @@ All services included in Ethereum client.
     }
 ```
 
-## Introduction and examples
+### SmartContractService
+
+Consult <a href="./SmartContract/">SmartContractService</a> to get a description about the functionality.
+
+### Token
+
+Consult <a href="./Token/">Token</a> to get a description about the functionality.

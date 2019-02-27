@@ -1,37 +1,95 @@
 # SmartContract
 
-Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. DLT Adapter offer a set of api operations to manage all options with smart contracts in a dlt network.
+Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. 
 
-## Deploy Smart Contract
+The service needs a <a href="../java/#using-all-together">config object</a> and a service of ethereum transactions, that is included in EthereumClient. 
 
-First of all, we need to check the available accounts and select the address with enough balance to operate with, you can use the <a href="./Common.md/">Common</a> operations of the commponent.
+```java
+    public EthereumSmartContractService(final HancockConfig config, final EthereumTransactionService transactionClient) {
+        this.config = config;
+        this.transactionClient = transactionClient;
+    }
+```
 
-Once we have our smart contract developed, we can adapt a Smart Contract deployment order to get the response raw to deploy the smart contract on dlt network. We need a raw serialized binary compilation and ABI of the contract stored in an accessible point, the constructor method of the contract, optionally the params of this method and finally the selected address as sender.
+To use this service only need the instance of Ethereum client.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-deploy-smartcontract">link</a>.
+```java
+EthereumClient hancockClient = new EthereumClient(config);
 
-To deploy the adapted deployment transaction, we can use the send transaction call of <a href="../wallet-hub/">Wallet-Hub</a> commponent to finish the deployment.
-
-To check the smart contract deployment transaction, we can call to <a href="../dlt-broker/">Dlt Broker</a> commponent, with the selected address as sender to get the contract address.
-
-Save the contract address, you will need it to register the smart contract.
+hancockClient.getSmartContractService();
+```
 
 ## Register Smart Contract on Hancock
 
-Once we finish the deploy, we can register the smart contract to operate with it in Hancock.
+We can register the smart contract to operate with it in Hancock. 
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#register-smartcontract">link</a>.    
+We must deploy the contract in the dlt network before, since we need the address of the contract.
 
-## Find a Smart Contract
+```java
+ * @param alias   An alias for the smart contract
+ * @param address The address of the deployed smart contract instance
+ * @param abi     The application binary interface (abi) of the deployed smart contract
+ * @return The result of the request
+ * @throws HancockException
 
-To check the registered smart contracts, we can get a list of all contracts registered in Hancock, use the call descripted in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#list-of-smartcontracts">link</a>.
+hancockClient.getSmartContractService().register(alias,address,abi);
+```  
 
 ## Invoke a Smart Contract
 
-After deploy and register our contract, we can use all operations of the contract with invoke operation.
+We can use operations of the contract with invoke operation.
 
-We can adapt the invoke order to get the response raw to invoke an operation of the contract. We need the operation name, optionally the params of the method and finally the selected address as sender.
+Makes an invocation to a smart contract method. Invocations are used to call smart contract methods that writes information in the blockchain consuming gas.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-of-smartcontract">link</a>.
+```java
+ * @param contractAddressOrAlias Address or alias of the smart contract registered in Hancock
+ * @param method                 The name of the method to call
+ * @param params                 An array of arguments passed to the method
+ * @param from                   The address of the account doing the call
+ * @param options                Configuration of how the transaction will be send to the network
+ * @return The returned value from the smart contract method
+ * @throws Exception
 
-Anyway we can operate with contract deployments on dlt network without register the contract before in Hancock. In that case, beside of the parameters, we need the abi of the contract, check <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-with-abit">the technical call</a> to know more details.
+hancockClient.getSmartContractService().invoke(contractAddressOrAlias, method, params, from, options);
+```  
+
+Anyway we can operate with contract deployments on dlt network without register the contract before in Hancock. In that case, beside of the parameters, we need the abi of the contract.
+
+```java
+hancockClient.getSmartContractService().invokeAbi(contractAddressOrAlias, method, params, from, options, abi);
+```  
+
+## Call a Smart Contract
+
+We can call operations of the contract to get information about it.
+
+Makes a call to an smart contract method. Calls only fetch information from blockchain so it doesn't consume gas
+
+```java
+ * @param contractAddressOrAlias Address or alias of the smart contract registered in Hancock
+ * @param method                 The name of the method to call
+ * @param params                 An array of arguments passed to the method
+ * @param from                   The address of the account doing the call
+ * @return The returned value from the smart contract method
+ * @throws Exception
+
+hancockClient.getSmartContractService().call(contractAddressOrAlias, method, params, from);
+```  
+
+Anyway we can operate with contract deployments on dlt network without register the contract before in Hancock. In that case, beside of the parameters, we need the abi of the contract.
+
+```java
+hancockClient.getSmartContractService().callAbi(contractAddressOrAlias, method, params, from, abi);
+```  
+
+## Subscribe a Smart Contract
+
+Create a websocket subscription to watch transactions of type "contracts" in the network.
+
+```java
+ * @param contracts An array of address or alias that will be added to the watch list
+ * @return A HancockSocket object which can add new subscriptions and listen incoming message
+ * @throws HancockException
+
+hancockClient.getSmartContractService().subscribe(contracts);
+``` 
