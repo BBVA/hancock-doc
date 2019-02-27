@@ -29,6 +29,6 @@ monitoring: true
 
 ### externalDNS - Use it to create a DNS record. Optional
 ### The final URL will be <externalDns>-<namespace>.kickstartteam.es
-externalDns: hancock-landing
+externalDns: hancock-docs
 ### Enable HTTPS. Optional
 SSL: false
