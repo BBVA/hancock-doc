@@ -10,9 +10,47 @@ module.exports = {
     editLinks: false,
     sidebar: [
       ['/guide/getting-started/', 'Getting Started'],
-      ['/guide/dlt-adapter/', 'DLT Adapter'],
-      ['/guide/wallet-hub/', 'Wallet Hub'],
-      ['/guide/dlt-broker/', 'DLT Broker'],
+      {
+        title: 'DLT Adapter',
+        path: '/guide/dlt-adapter/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/guide/dlt-adapter/', 'Description'],
+          {
+            title: 'Operations',
+            path: '/guide/dlt-adapter/Operations/Common/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['/guide/dlt-adapter/Operations/Common', 'Common'],
+              ['/guide/dlt-adapter/Operations/SmartContract', 'SmartContract'],
+              ['/guide/dlt-adapter/Operations/Token', 'Token'],
+              ['/guide/dlt-adapter/Operations/Protocol', 'Protocol']
+            ]
+          },
+        ]
+      },
+      {
+        title: 'Wallet Hub',
+        path: '/guide/wallet-hub',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/guide/wallet-hub/', 'Description'],
+          ['/guide/wallet-hub/Operations/', 'Operations']
+        ]
+      },
+      {
+        title: 'DLT Broker',
+        path: '/guide/dlt-broker/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/guide/dlt-broker/', 'Description'],
+          ['/guide/dlt-broker/Options/', 'Options']
+        ]
+      },
       {
         title: 'SDK',
         path: '/guide/sdk/',

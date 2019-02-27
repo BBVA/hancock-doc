@@ -1,8 +1,8 @@
-# Smart contract
+# SmartContract
 
 Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. DLT Adapter offer a set of api operations to manage all options with smart contracts in a dlt network.
 
-# Deploy Smart Contract
+## Deploy Smart Contract
 
 First of all, we need to check the available accounts and select the address with enough balance to operate with, you can use the <a href="./Common.md/">Common</a> operations of the commponent.
 
@@ -16,17 +16,17 @@ To check the smart contract deployment transaction, we can call to <a href="../d
 
 Save the contract address, you will need it to register the smart contract.
 
-# Register Smart Contract on Hancock
+## Register Smart Contract on Hancock
 
 Once we finish the deploy, we can register the smart contract to operate with it in Hancock.
 
 You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#register-smartcontract">link</a>.    
 
-# Find a Smart Contract
+## Find a Smart Contract
 
 To check the registered smart contracts, we can get a list of all contracts registered in Hancock, use the call descripted in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#list-of-smartcontracts">link</a>.
 
-# Invoke a Smart Contract
+## Invoke a Smart Contract
 
 After deploy and register our contract, we can use all operations of the contract with invoke operation.
 

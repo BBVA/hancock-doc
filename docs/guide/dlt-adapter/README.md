@@ -62,7 +62,7 @@ Next sections describe the operations available on Hancock DLT Adapter.
 
 Allow operations like get balance, and adapt transfer operations to send to dlt network.
 
-To Know more consult <a href="./Common.md/">Common operations</a> over blockchain network. 
+To Know more consult <a href="./Operations/Common/">Common operations</a> over blockchain network. 
 
 ### Smartcontracts operations
 
@@ -73,19 +73,19 @@ Offer different operations to manage smart contracts:
 
 It holds a registry for human-friendly smart contract management/interaction.
 
-To Know more consult <a href="./SmartContract.md/">SmartContract operations</a> over blockchain network. 
+To Know more consult <a href="./Operations/SmartContract/">SmartContract operations</a> over blockchain network. 
 
 ### Token operations
 
 Facilitate a simply interface to work with a special case of Ethereum smartcontracts, with common ERC20 interface.
 
-To Know more consult <a href="./Token.md/">Token operations</a> over Ethereum network. 
+To Know more consult <a href="./Operations/Token/">Token operations</a> over Ethereum network. 
 
 ### Hancock protocol
 
 Use Hancock protocol to encode and decode operations and work with data on qr code.
 
-To Know more consult <a href="./Protocol.md/">Protocol operations</a>. 
+To Know more consult <a href="./Operations/Protocol/">Protocol operations</a>. 
 
 ## Api documentation
 
