@@ -58,7 +58,20 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           ['/guide/sdk/nodejs/', 'NodeJs'],
-          ['/guide/sdk/java/', 'Java']
+          ['/guide/sdk/java/', 'Java'],
+          {
+            title: 'Services',
+            path: '/guide/sdk/services/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['/guide/sdk/services/SmartContract', 'SmartContract'],
+              ['/guide/sdk/services/Token', 'Token'],
+              ['/guide/sdk/services/Transaction', 'Transaction'],
+              ['/guide/sdk/services/Transfer', 'Transfer'],
+              ['/guide/sdk/services/Wallet', 'Wallet']
+            ]
+          }
         ]
       }
     ] 
