@@ -8,13 +8,13 @@ Hancock is a research product conceived within BBVA New digital business - R&D t
 
 Hancock can be divided into three main components:
 
-- DLT Adapter - Keep it simple Interface to abstract interaction with different DLT networks.
+- [DLT Adapter](./dlt-adapter/) 
 
-- Wallet Hub - Enroute Interactions Enable connect their signer wallets, or wallet service providers, to the wallet hub, that will then route any ready-to-sign transaction.
+- [Wallet Hub](./wallet-hub/) 
 
-- DLT Broker - Real time notifications Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiently subscribe to blockchain asynchronous events to avoid constant request of status.
+- [DLT Broker](./dlt-broker/) 
 
-We also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. 
+We also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. You can read more about it in the [Hancock SDK](./sdk/) section.
 
 <img style="display: block; margin: 2rem auto" alt="hancock commponents"  src="../img/hancock_commponent.png">
 

@@ -2,7 +2,27 @@
 
 Microservice belonging to Hancock's ecosystem, which adapts transactions described in a common schema to the different blockchain implementatations' internal schemas.
 
+## Motivation
+
+Smart Contracts are small programs that serve as interfaces for state changes on a distributed ledger. Currently there is no standard specification for these interfaces and invocations are done in a very specific and unusable way, e.g. in Ethereum by translating transactions into a binary interface.
+
+Furthermore, in order to exploit full decentralization provided by blockchain, users should retain control over their wallets and trusted peers and avoid scenarios where communication with blockchain is centralized on a gateway service that controls user private keys and trusted peers.
+Proposed Change
+
+## Proposed Change
+
 DLT Adapter aims to provide a high-level interface to operations that can be performed on DLT Networks. 
+
+DLT Adapter is a web service that abstracts user interactions with DLT networks on a high-level common HTTP REST interface that conveniently provides the user with the specific DLT type adapted transaction that can be easily inspected, signed and personally sent to a DLT network trusted node of the choice of the user.
+
+There are 4 identified high-level interactions with a blockchain:
+
+ - Smart Contract creation
+ - Smart Contract transactions
+ - Token transfers
+ - Notarizations
+
+It is necessary to keep in mind to include the chain identifier in adapted transaction, which must be executed just in the appropriate network.
 
 ## Current blockchains supported
 
@@ -97,6 +117,6 @@ DLT Adapter provides some endpoints to interact with the blockchain, allowing re
 
 If you are thinking about contributing to the project, you should know that:
 
- - The code has been written following the clean architecture principles, as well as SOLID design principles.
+- The code has been written following the [clean architecture principles](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), as well as [SOLID design principles](https://es.wikipedia.org/wiki/SOLID).
 
- - The project is built in typescript v2.9.2 using the recommended guidelines. Also there is a linter rules configured to follow this guidelines, so you can search for a plugin for your favourite IDE to be warned about this linter errors.
+- The project is built in [typescript](https://www.typescriptlang.org/) v2.9.2 using the [recommended guidelines](https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts). Also there is a linter rules configured to follow this guidelines, so you can search for a plugin for your favourite IDE to be warned about this linter errors.
