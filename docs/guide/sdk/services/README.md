@@ -1,44 +1,34 @@
 # Hancock SDK client
 
-## Installation
+## Client
 
-To use the Hancock SDK client add the dependency to your build.gradle file:
+Main interface to interact with Hancock's ethereum interface:
 
-```text/plain
-# build.gradle
-dependencies {
-	compile('bbva.ndb:hancock-sdk-client-android:1.0.0-alpha.27')
-}
-```
-
-## Using all together
-
-The main client is the [HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) class. You have to instantiate it passing an [HancockConfig](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) configuration object to indicate the client which hancock service it has to use.
-
-Configuration object example:
+@param config Configuration of Hancock (Adapter, Broker, WalletHub, DLT Node)
 
 ```java
-import com.bbva.hancock.sdk.dlt.ethereum.EthereumClient;
-import com.bbva.hancock.sdk.config.HancockConfig;
+    HancockConfig config = new HancockConfig.Builder()
+                    .withEnv(AppConstants.FLAVOR)
+                    .withNode(AppConstants.ETHEREUM_NODE_HOST, AppConstants.ETHEREUM_NODE_PORT)
+					.withAdapter(AppConstants.HANCOCK_ADAPTER_HOST, AppConstants.HANCOCK_ADAPTER_BASE, AppConstants.HANCOCK_ADAPTER_PORT)
+					.withWallet(AppConstants.HANCOCK_WALLET_HOST, AppConstants.HANCOCK_WALLET_BASE, AppConstants.HANCOCK_WALLET_PORT)
+                    .build();
+	new EthereumClient(config);
+```
 
-HancockConfig config = new HancockConfig.Builder()
-    .withAdapter("https://hancock-url.es", "/dlt-adapter", 443)
-    .withBroker("ws://hancock-url", "", 80)
-    .withWallet("https://hancock-url.es", "/wallet-hub", 443)
-    .withEnv("pro")
-    .build();
-    
-EthereumClient client = new EthereumClient(config);
+All services included in Ethereum client.
+
+```java
+    public EthereumClient(HancockConfig config) {
+
+        this.protocolService = new ProtocolService(config);
+        this.walletService = new EthereumWalletService(config);
+        this.transactionService = new EthereumTransactionService(config);
+        this.transferService = new EthereumTransferService(config, this.transactionService);
+        this.tokenService = new EthereumTokenService(config, this.transactionService);
+        this.smartContractService = new EthereumSmartContractService(config, this.transactionService);
+
+    }
 ```
 
 ## Introduction and examples
-
-[HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) provides interfaces to interact with the blockchain 
-allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-android/docs/index.html) to see examples of use:
-
-- [HancockEthereumWalletService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumwalletclient.html)
-- [HancockEthereumTransferService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransferclient.html)
-- [HancockEthereumTransactionService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransactionclient.html)
-- [HancockEthereumSmartContractService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumsmartcontractclient.html)
-- [HancockEthereumTokenService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtokenclient.html)
-- [HancockProtocolService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumprotocolclient.html)
