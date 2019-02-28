@@ -1,18 +1,43 @@
 # Token
 
-Facilitate a simply interface to work with a special case of Ethereum smartcontracts, with common ERC20 interface. ERC20 is a standard smart contract template for Ethereum fungible tokens, to know more read the next <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">link</a>.
+The token service facilitate a simply interface to work with a special case of Ethereum smartcontracts, with common ERC20 interface. ERC20 is a standard smart contract template for Ethereum fungible tokens, to know more read the next <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">link</a>.
 
-To work with it we need an ERC20 contract deployed. We can register the contract in Hancock to operate with it, anyway we can use all operations with any contract deployed, if add "smartContractAddress" param in body request with contract address on it and delete {AddressAlias} parameter in path.
+To work with it we need an ERC20 contract deployed. We must register the contract in Hancock to operate with it.
 
-## Register
+The service needs a <a href="../java/#using-all-together">config object</a> and a service of ethereum transactions, that is included in EthereumClient. 
 
-We can register this kind of contract only with the address of the contract and an alias. You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-register">link</a>. 
+```java
+    public EthereumTokenService(HancockConfig config, EthereumTransactionService transactionClient) {
+        this.config = config;
+        this.transactionClient = transactionClient;
+    }
+```
+## Register ERC20 contract on Hancock
 
-Once we register the contract, we can get the complete list of ERC20 contract registered on hancock with this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-list">call</a>. 
+We can register the ERC20 smart contract to operate with it in Hancock. 
+
+We must deploy the contract in the dlt network before, since we need the address of the contract.
+
+```java
+ * @param alias An alias for the token
+ * @param address The address of the deployed smart contract token instance
+ * @return The result of the request
+ * @throws Exception
+
+hancockClient.getTokenService().register(alias,address);
+```  
 
 ## Metadata
 
-To know all detail about a contract make the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-metadata">call</a>. 
+To know all detail about a contract make the next call. 
+
+```java
+ * @param addressOrAlias Address or alias of the token smart contract registered in Hancock
+ * @return name, symbol, decimals, and totalSupply of the token
+ * @throws HancockException
+
+hancockClient.getTokenService().register(alias,address);
+```  
 
 This give us the common data about this kind of contracts:
  - Name: Name of the token.

@@ -9,7 +9,16 @@ module.exports = {
     search: false,
     editLinks: false,
     sidebar: [
-      ['/guide/getting-started/', 'Getting Started'],
+      {
+        title: 'Guide',
+        path: '/guide/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/guide/getting-started/', 'Getting Started'],
+          ['/guide/getting-started/Concept', 'Concepts']
+        ]
+      },
       {
         title: 'DLT Adapter',
         path: '/guide/dlt-adapter/',
@@ -58,7 +67,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           ['/guide/sdk/nodejs/', 'NodeJs'],
-          ['/guide/sdk/java/', 'Java'],
+          ['/guide/sdk/java/', 'Java/Android'],
           {
             title: 'Services',
             path: '/guide/sdk/services/',
