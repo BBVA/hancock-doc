@@ -19,12 +19,21 @@ We can register the ERC20 smart contract to operate with it in Hancock.
 We must deploy the contract in the dlt network before, since we need the address of the contract.
 
 ```java
- * @param alias An alias for the token
- * @param address The address of the deployed smart contract token instance
+ * @param alias, An alias for the token
+ * @param address, The address of the deployed smart contract token instance
  * @return The result of the request
  * @throws Exception
 
 hancockClient.getTokenService().register(alias,address);
+```  
+
+After finish the registration of the contract, you can get a list of all registered erc20 contracts on Hancock.
+
+```java
+ * @return The list of all tokens registered in Hancock
+ * @throws HancockException
+
+hancockClient.getTokenService().getAllTokens();
 ```  
 
 ## Metadata
@@ -32,14 +41,14 @@ hancockClient.getTokenService().register(alias,address);
 To know all detail about a contract make the next call. 
 
 ```java
- * @param addressOrAlias Address or alias of the token smart contract registered in Hancock
+ * @param addressOrAlias, Address or alias of the token smart contract registered in Hancock
  * @return name, symbol, decimals, and totalSupply of the token
  * @throws HancockException
 
-hancockClient.getTokenService().register(alias,address);
+hancockClient.getTokenService().getMetadata(addressOrAlias);
 ```  
 
-This give us the common data about this kind of contracts:
+This give us the common data about ERC20 contracts:
  - Name: Name of the token.
  - Symbol: Abbreviation to identify the token.
  - Decimals: Accuracy of the unit of measurement of the token.
@@ -47,26 +56,65 @@ This give us the common data about this kind of contracts:
 
 ## Balance
 
-The first action with our contract will be to know our current tokens balance. We only need a simple api call to get it. You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-balance">link</a>. 
+Get the token balance for a specific account. 
+
+```java
+ * @param addressOrAlias, Address or alias of the token smart contract registered in Hancock
+ * @param address, The token owner`s address
+ * @return name, symbol, decimals, and totalSupply of the token
+ * @throws HancockException
+
+hancockClient.getTokenService().getBalance(addressOrAlias, address);
+```  
 
 ## Transfer
 
-You can make a transfer of an amount of your balance from your account to a specific account. Only need to have enough tokens balance to make the transfer.
+You can make a transfer of an amount of your balance from your account to a specific account. You must have enough tokens balance to make the transfer, and enough ethereum balance to send the operation to Ethereum network.
 
-This operation give us a response with everything you need to sign and send to ethereum dlt. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-token-transfer">link</a>. 
+```java
+ * @param request, The data of the transaction (owner, receiver, amount of tokens (in weis) and the address/alias of the contract)
+ * @param txConfig, Configuration of how the transaction will be send to the network
+ * @return The result of the request
+ * @throws Exception
+
+hancockClient.getTokenService().transfer(request, txConfig);
+```  
 
 ## Approve
 
 This operation allow to owner approve a specific amount of tokens for spender. This spender can perform the "transferFrom" operation until the maximum amount approved.
 
-This operation give us a response with everything you need to sign and send to ethereum dlt. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-token-approve">link</a>. 
+```java
+ * @param request, The data of the transaction (token owner`s address, token spender`s address, amount of tokens (in weis) and the address/alias of the contract)
+ * @param txConfig, Configuration of how the transaction will be send to the network
+ * @return The result of the request
+ * @throws Exception
+
+hancockClient.getTokenService().approve(request, txConfig);
+```  
 
 ## Allowance
 
-To consult the amount of tokens approved by the owner that can be transferred with a "transferFrom" operation from spender's account. You need to call this operation, that return the amount of approved value. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#token-allowance">link</a>. 
+To consult the amount of tokens approved by the owner that can be transferred with a "transferFrom" operation from spender's account. Returns the amount of tokens approved by the owner that can be transferred to the spender's account
+
+```java
+ * @param request The data of the transaction (caller`s address, token owner`s address, token spender`s address, amount of tokens (in weis) and the address/alias of the contract)
+ * @param txConfig Configuration of how the transaction will be send to the network
+ * @return The result of the request
+ * @throws Exception
+
+hancockClient.getTokenService().allowance(request, txConfig);
+```  
 
 ## Transfer from
 
-You can use "transferFrom" operation to transfer tokens from an account with enough balance to a specific account, the spender that invoke the operation must have sufficient allowance to transfer. To know more and see an example visit this <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-token-transferfrom">link</a>. 
+You can use "transferFrom" operation to transfer tokens from an account with enough balance to a specific account, the spender that invoke the operation must have sufficient allowance to transfer, the sender account must have sufficient balance to transfer.
 
-Remember that after get the response, we can sent the response to sign and send it to dlt network, you can use the <a href="../wallet-hub/">Wallet-Hub</a> commponent to finish the operations.
+```java
+ * @param request The data of the transaction (approved spender`s address, token sender`s address, receiver, amount of tokens (in weis) and the address/alias of the contract)
+ * @param txConfig Configuration of how the transaction will be send to the network
+ * @return The result of the request
+ * @throws Exception
+
+hancockClient.getTokenService().transferFrom(request, txConfig);
+```  

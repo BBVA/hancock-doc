@@ -2,7 +2,7 @@
 
 ## Overview
 
-Hancock is a research product conceived within BBVA New digital business - R&D that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock can be divided into three main components:
+Hancock provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock can be divided into three main components:
 
 - [DLT Adapter](../dlt-adapter/) - Keep it simple
 Interface to abstract interaction with different DLT networks.
@@ -19,7 +19,7 @@ Here is a big picture from the point of view of an application that is using han
 
 <img style="display: block; margin: 2rem auto" alt="Hancock high level view" src="../../img/hancock_dia1.png">
 
-In order to comunicate with some of the supported DLTs, the application does not need to interact directly with hancock's microservices, instead of that, all the operations can be achieve by using a generic interface provided by the hancock SDK.
+In order to comunicate with some of the supported DLTs, the application does not need to interact directly with hancock's microservices, instead of that, all the operations can be achieve by using a generic interface provided by the [Hancock SDK](../sdk/).
 
 ## Basic example
 
