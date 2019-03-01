@@ -1,22 +1,46 @@
-# Protocol
+# Transaction Service
 
-Hancock give us a standard codification of messages to work with transactions and qr codes. The api adapt operations to Hancock Protocol, transform the data operations to a encode protocol to work with qr code.
+The Transfer Service provides some methods to let the user to send transactions between two addresses, as well as subscribe to listen for transfers and adapt transfers.
 
-## Encode
+## Send
 
-The encode operation, transform all data about transfer operations to a raw parameter. The respond can be used to generate a qr code that can be read to generate a predefined transfer operation.
+Send a transaction of ether between to accounts to the network according to the specification in the txConfig. Could be signed and then sent, sent to a sign provider before send it to the dlt or sent it assuming that the node has this account unlocked. Internally it call to the send of Transaction service.
 
-You will need the next data to generate the code, before to call the api:
- - Action: The kind of action that will invoke on dlt network, in our case a "transfer".
- - To: The address that will receive the value.
- - Value: The amount of balance to be transfer.
- - Data: Information to describe the operation.
- - Dlt: Name of the dlt network, for example "Ethereum".
+```java
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#encode">link</a>.
+  * @param tx       Data of the transaction (sender address, receiver addres, amount of ether, data)
+  * @param txConfig Configuration of how the transaction will be send to the network
+  * @return The result of the request
+  * @throws Exception
 
-## Decode 
+ethereumClient.getTransferService().send(tx, txConfig);
+```  
 
-This api call give us all parameters that is needed to form a transfer (described in encode call), we need the string codified to get all the data.
+## Adapt Transfer
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#decode">link</a>.
+Adapt a transaction to get all the info necessary before send it, that is: nonce, gas and gasPrice. Return the transaction ready to be signed.
+
+```java
+
+  * @param txRequest The transaction with the minimum data to be fill (From, To, Value)
+  * @return The transaction with all the data fill (Gas, GasPrice, Nonce)
+  * @throws Exception
+
+ethereumClient.getTransferService().adaptTransfer(tx, txConfig);
+```  
+
+## Subscribe
+
+Create a websocket subscription with the broker to watch transactions of type "transfer" in the network.
+
+```java
+
+  * @param addresses An array of address that will be added to the watch list
+  * @param consumer  A consumer plugin previously configured in hancock that will handle each received event
+  * @return A HancockSocket object which can add new subscriptions and listen incoming message
+  * @throws HancockException
+
+ethereumClient.getTransferService().subscribe(addresses, consumer);
+´´´
+
+     
