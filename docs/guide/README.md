@@ -1,10 +1,7 @@
----
-title: Guide
----
 
 # Hancock guidebook 
 
-Hancock is a research product conceived within <a href="https://www.bbva.com/ndb/es/">BBVA New digital business - R&D</a> that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock is a journey to industrial and productive Blockchain applications. 
+Hancock is a research product conceived within <a href="https://www.bbva.com/ndb/es/">BBVA New digital businesses - R&D</a> that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiency to develop in any DLT. Hancock is a journey to industrial and productive Blockchain applications. Hancock is a free, open-source software, to work with blockchain networks. 
 
 [Hancock](./getting-started/) can be divided into three main components:
 
@@ -29,6 +26,8 @@ Hancock is like a bridge for blockchains, offer a sdk and an API to manage conne
 ## Why Hancock
 
 Hancock was president of Congress when the Declaration of Independence was adopted and signed. He is primarily remembered by Americans for his large, flamboyant signature on the Declaration, so much so that "John Hancock" became, in the United States, an informal synonym for signature.
+
+The digital signature is one of the most important benefits obtained with the immutable nature of blockchain. Hancock allow us apply the digital signature in an easy way.
 
 ## Current blockchains supported
 

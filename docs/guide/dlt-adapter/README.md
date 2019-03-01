@@ -13,7 +13,7 @@ Proposed Change
 
 DLT Adapter aims to provide a high-level interface to operations that can be performed on DLT Networks. 
 
-DLT Adapter is a web service that abstracts user interactions with DLT networks on a high-level common HTTP REST interface that conveniently provides the user with the specific DLT type adapted transaction that can be easily inspected, signed and personally sent to a DLT network trusted node of the choice of the user.
+DLT Adapter is a web service that abstracts user from interactions with DLT networks on a high-level common HTTP REST interface that conveniently provides the user with the specific DLT type adapted transaction that can be easily inspected, signed and personally sent to a DLT network trusted node of the choice of the user.
 
 There are 4 identified high-level interactions with a blockchain:
 
