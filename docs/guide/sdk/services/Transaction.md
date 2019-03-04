@@ -1,10 +1,18 @@
 # Transaction Service
 
-The Transaction Service provides some methods to let the user to send transactions in different conditions:
+The Transaction Service provides some methods to let the user to send transactions in different conditions.
+
+The service needs a <a href="../java/#using-all-together">config object</a>. 
+
+```java
+    public EthereumTransactionService(HancockConfig config) {
+        this.config = config;
+    }
+```
 
 ## Send
 
-Send a transaction to the network according to the specification in the txConfig. Could be signed and then send it, senden to a sign provider before send it or send it assuming that the node has this account unlocked.
+Send a transaction to the network according to the specification in the txConfig. Could be signed and then sent, sent to a sign provider before send it or send it assuming that the node has this account unlocked.
 
 ```java
   * @param rawtx    A raw transaction which will be sent to Ethereum
@@ -41,7 +49,7 @@ ethereumClient.getTransactionService().signPersonalMessage(message, privateKey);
 
 ## Sign Transaction
 
-When we want to send a Transaction to the DLT, we have to sign it previosly if the node does not have the account unlocked.
+When we want to send a Transaction to the DLT, we have to sign it previosly with the private key of the address used as from if the node does not have the account unlocked.
 
 ```java
   * @param rawTransaction A raw transaction which will be signed with the privatekey
@@ -53,7 +61,7 @@ ethereumClient.getTransactionService().signTransaction(rawTransaction, privateKe
 
 ## Send Raw Transaction
 
-Send a transaction to the DLT assuming that the node that receive the transaction has the account used as from unlocked.
+Send a transaction to the DLT assuming that the node that receive the transaction has the account used as from unlocked, that means that all transaction received for the node with this account as from will be processed if they are correct.
 
 ```java
   * @param rawTx A raw transaction which will be sent to the network
@@ -65,7 +73,7 @@ ethereumClient.getTransactionService().sendRawTransaction(rawTx);
 
 ## Send To Sign Provider
 
-Send a transaction to be sign in a third party sing provider and once signed, it will be send to the DLT
+Send a transaction to be sign in a third party sing provider and once signed, it will be send to the DLT.
 
 ```java
   * @param rawTx    A raw transaction which will be signed by the sign provider
@@ -78,7 +86,7 @@ ethereumClient.getTransactionService().sendToSignProvider(rawTx, txConfig);
 
 ## Send Signed Transaction
 
-Send a transaction to the WalletHub service that has been signed previosly.
+Send a transaction that has been signed previosly to the WalletHub service.
 
 ```java
 

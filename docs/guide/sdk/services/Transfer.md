@@ -2,6 +2,15 @@
 
 The Transfer Service provides some methods to let the user to send transactions between two addresses, as well as subscribe to listen for transfers and adapt transfers.
 
+The service needs a <a href="../java/#using-all-together">config object</a> and a service of ethereum transactions, that is included in EthereumClient. 
+
+```java
+    public EthereumTokenService(HancockConfig config, EthereumTransactionService transactionClient) {
+        this.config = config;
+        this.transactionClient = transactionClient;
+    }
+```
+
 ## Send
 
 Send a transaction of ether between to accounts to the network according to the specification in the txConfig. Could be signed and then sent, sent to a sign provider before send it to the dlt or sent it assuming that the node has this account unlocked. Internally it call to the send of Transaction service.

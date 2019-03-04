@@ -34,11 +34,4 @@ EthereumClient client = new EthereumClient(config);
 ## Introduction and examples
 
 [HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) provides interfaces to interact with the blockchain 
-allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-android/docs/index.html) to see examples of use:
-
-- [HancockEthereumWalletService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumwalletclient.html)
-- [HancockEthereumTransferService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransferclient.html)
-- [HancockEthereumTransactionService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransactionclient.html)
-- [HancockEthereumSmartContractService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumsmartcontractclient.html)
-- [HancockEthereumTokenService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtokenclient.html)
-- [HancockProtocolService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumprotocolclient.html)
+allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) to see examples of use.

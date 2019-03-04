@@ -34,10 +34,22 @@ All services included in Ethereum client.
     }
 ```
 
-### SmartContractService
+### SmartContract Service
 
-Consult <a href="./SmartContract/">SmartContractService</a> to get a description about the functionality.
+Consult <a href="./SmartContract/">SmartContract Service</a> to get a description about the functionality.
 
-### Token
+### Token Service
 
-Consult <a href="./Token/">Token</a> to get a description about the functionality.
+Consult <a href="./Token/">Token Service</a> to get a description about the functionality.
+
+### Transaction Service
+
+Consult <a href="./Transaction/">Transaction Service</a> to get a description about the functionality.
+
+### Transfer Service
+
+Consult <a href="./Transfer/">Transfer Service</a> to get a description about the functionality.
+
+### Wallet Service
+
+Consult <a href="./Wallet/">Wallet Service</a> to get a description about the functionality.
