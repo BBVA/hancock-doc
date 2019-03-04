@@ -1,22 +1,22 @@
 # Protocol
 
-Hancock give us a standard codification of messages to work with transactions and qr codes. The api adapt operations to Hancock Protocol, transform the data operations to a encode protocol to work with qr code.
+Hancock gives us a standard codification of messages to work with transactions and QR codes. The API adapts operations to Hancock Protocol, transforms the operations data to an encoded protocol to work with QR codes.
 
 ## Encode
 
-The encode operation, transform all data about transfer operations to a raw parameter. The respond can be used to generate a qr code that can be read to generate a predefined transfer operation.
+The encode operation, transforms all the data about transfer operations to a raw parameter. The responds can be used to generate a QR code that can be read to generate a predefined transfer operation.
 
-You will need the next data to generate the code, before to call the api:
- - Action: The kind of action that will invoke on dlt network, in our case a "transfer".
+You will need the following data to generate the code, before calling the API:
+ - Action: The kind of action that will invoke on DLT network, in our case a "transfer".
  - To: The address that will receive the value.
- - Value: The amount of balance to be transfer.
+ - Value: The amount of balance to be transferred.
  - Data: Information to describe the operation.
- - Dlt: Name of the dlt network, for example "Ethereum".
+ - Dlt: Name of the DLT network, for example "Ethereum".
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#encode">link</a>.
+You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#encode">here</a>.
 
 ## Decode 
 
-This api call give us all parameters that is needed to form a transfer (described in encode call), we need the string codified to get all the data.
+This API call gives us all parameters that are needed to form a transfer (parameters described in the encode call). We need the string codified to get all the data.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#decode">link</a>.
+You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#decode">here</a>.
