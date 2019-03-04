@@ -4,7 +4,7 @@ This microservice belonging to Hancock's ecosystem, allows you to send transacti
 
 ## Motivation
 
-To be able to sign transactions in blockchain we need a private key. To avoid centralizing the user's private key we need to support different signature providers. 
+To be able to sign transactions in blockchain we need a private key. To avoid centralizing the user's private key we need to support differents signature providers. 
 
 ## Proposed Change
 
@@ -76,7 +76,7 @@ We have a specific option to configure Cryptvault like our signer, to that end, 
 
 ## Using the service
 
-To Know more consult <a href="./Operations/">operations</a> facilitated by Wallet Hub component.
+For more info, go to <a href="./Operations/">operations</a> facilitated by Wallet Hub component.
 
 ## Api documentation
 

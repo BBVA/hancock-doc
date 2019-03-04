@@ -2,6 +2,8 @@
 
 Hancock users can make use of Hancock SDKs to orchestrate the requests and events to and from Hancock components required to perform application level operations.
 
+<img style="display: block; margin: 2rem auto" alt="Hancock transfer flow"  src="../../img/hancock_sdk.png">
+
 To see an example of the main Hancock's workflows, take a look to next <a href="./workflow/">section</a>.
 
 ## Nodejs

@@ -8,9 +8,9 @@ Sends a Raw Transaction (e.g. return of adapted <a href="https://bbva.github.io/
 
 Signature Providers must be registered.
 
-This call returned a response ready to be send to dlt network.
+This call returned a response ready to be send to DLT network.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-sign-tx">link</a>.
+You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-sign-tx">here</a>.
 
 ## Send Transaction 
 
@@ -18,7 +18,7 @@ Sends a Raw Transaction (e.g. return of adapted <a href="https://bbva.github.io/
 
 If successful, it give us a transaction hash to identify the transaction on dlt network, and a <a href="https://bbva.github.io/hancock-dlt-broker/api.html#tocSsendresponse">set</a> of technical parameters of dlt node.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-send-tx">link</a>.
+You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-send-tx">here</a>.
 
 ## Send Signed Transaction 
 
@@ -26,4 +26,4 @@ Sends a signed transaction payload to an Ethereum node. The transaction must be 
 
 If successful, it give us a transaction hash to identify the transaction on dlt network.
 
-You can see the technical documentation, and an example of the call in the next <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-send-signed-tx">link</a>.
+You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-broker/api.html#hancock-wallet-hub--dlt-send-signed-tx">here</a>.
