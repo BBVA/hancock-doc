@@ -2,16 +2,16 @@
 
 ## Overview
 
-Hancock is a research product conceived within BBVA New digital business - R&D that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock can be divided into three main components:
+Hancock provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiency to develop in any DLT. Hancock can be divided into three main components:
 
 - [DLT Adapter](../dlt-adapter/) - Keep it simple
-Interface to abstract interaction with different DLT networks.
+Interface to abstract from interaction with different DLT networks.
 
 - [Wallet Hub](../wallet-hub/) - Enroute Interactions
 Enable connect their signer wallets, or wallet service providers, to the wallet hub, that will then route any ready-to-sign transaction.
 
 - [DLT Broker](../dlt-broker/) - Real time notifications
-Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiently subscribe to blockchain asynchronous events to avoid constant request of status.
+Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiency subscribe to blockchain asynchronous events to avoid constant request of status.
 
 To ease the orchestration between hancock's services and speed up the integration with them, we are providing a set of SDKs in different languages. You can read more about it in the [Hancock SDK](../sdk/) section.
 
@@ -19,7 +19,7 @@ Here is a big picture from the point of view of an application that is using han
 
 <img style="display: block; margin: 2rem auto" alt="Hancock high level view" src="../../img/hancock_dia1.png">
 
-In order to comunicate with some of the supported DLTs, the application does not need to interact directly with hancock's microservices, instead of that, all the operations can be achieve by using a generic interface provided by the hancock SDK.
+In order to comunicate with some of the supported DLTs, the application does not need to interact directly with hancock's microservices, instead of that, all the operations can be achieve by using a generic interface provided by the [Hancock SDK](../sdk/).
 
 ## Basic example
 

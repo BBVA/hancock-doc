@@ -1,31 +1,49 @@
----
-title: Guide
----
 
 # Hancock guidebook 
 
-Hancock is a research product conceived within BBVA New digital business - R&D that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiently to develop in any DLT. Hancock is a journey to industrial and productive Blockchain applications. 
+Hancock is a research product conceived within <a href="https://www.bbva.com/ndb/es/">BBVA New digital businesses - R&D</a> that provides convenient services to integrate with different DLT networks. We provide simplicity, adaptability and efficiency to develop in any DLT. Hancock is a journey to industrial and productive Blockchain applications. Hancock is a free, open-source software, to work with blockchain networks. 
 
-Hancock can be divided into three main components:
+[Hancock](./getting-started/) can be divided into three main components:
 
-- DLT Adapter - Keep it simple Interface to abstract interaction with different DLT networks.
+- [DLT Adapter](./dlt-adapter/) 
 
-- Wallet Hub - Enroute Interactions Enable connect their signer wallets, or wallet service providers, to the wallet hub, that will then route any ready-to-sign transaction.
+- [Wallet Hub](./wallet-hub/) 
 
-- DLT Broker - Real time notifications Provides a websocket connection that propagates any DLT event the user is subscribed. Thus, provides an interface to easily and efficiently subscribe to blockchain asynchronous events to avoid constant request of status.
+- [DLT Broker](./dlt-broker/) 
 
-we also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. 
+We also offer a sdk that provides a simplified consumption of all Hancock services. It reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving products quality. You can read more about it in the [Hancock SDK](./sdk/) section.
 
-<img :src="$withBase('/hancock.png')" alt="hancock">
+<img style="display: block; margin: 2rem auto" alt="hancock commponents"  src="../img/hancock_commponent.png">
 
-# Motivation
+## Motivation
 
 Every blockchain has its own interfaces, even though they share a common functionality. 
 
 Most applications have poor management of digital signatures, private keys and wallet management. Poor management of blockchain asynchronous nature, with delay in confirmations.
 
-# Current blockchains supported
+Hancock is like a bridge for blockchains, offer a sdk and an API to manage connections to blockchain, and you can focus on develop your bussiness application.
+
+## Why Hancock
+
+Hancock was president of Congress when the Declaration of Independence was adopted and signed. He is primarily remembered by Americans for his large, flamboyant signature on the Declaration, so much so that "John Hancock" became, in the United States, an informal synonym for signature.
+
+The digital signature is one of the most important benefits obtained with the immutable nature of blockchain. Hancock allow us apply the digital signature in an easy way.
+
+## Current blockchains supported
 
  - Ethereum
 
-# Next steps
+## Getting Started
+
+Take a look to the [Hancock](./getting-started/) components, and start with an [example](./getting-started/#basic-example) to introduce Hancock product.
+
+## Concepts
+
+If you need to remember a basic concepts about blockchain technologies, you can review some [concepts](./getting-started/Concept/) used on Hancock product.
+
+## Next steps
+
+We are working on integrate other blockchains networks to Hancock language. 
+
+Next blockchain networks:
+ - Bitcoin

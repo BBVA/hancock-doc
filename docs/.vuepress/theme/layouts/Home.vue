@@ -8,7 +8,7 @@
                <h1 class="We-provide-simplicit">
                   WE PROVIDE
                   <b>SIMPLICITY, ADAPTABILITY</b> AND
-                  <b>EFFICIENTLY</b> TO DEVELOP IN ANY DLT
+                  <b>EFFICIENCY</b> TO DEVELOP IN ANY DLT
                </h1>
             </div>
          </section>
@@ -54,7 +54,7 @@
                         <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
                         <hr class="float-left no-margin-left">
                         <div class="float-left">
-                           Hancock is a <b>research product</b> conceived within BBVA - New Digital Business Research Lab.
+                           Hancock is a <b>research product</b> conceived within BBVA - New Digital Businesses Research Lab.
                         </div>
                      </div>
                   </div>
@@ -77,7 +77,7 @@
                   We facilitate the
                   <b>development on DLT</b>, simplifying the
                   <b>interaction</b> and
-                  <b>abstracting</b> the specific logic of each one of them.
+                  <b>abstracting</b> from the specific logic of each one of them.
                </div>
                <div class="elements-hancock">
                   <div class="row border-bottom-grey">
@@ -85,14 +85,14 @@
                         <Element
                            :image="adapter"
                            title="DLT Adapter"
-                           description="Interface to abstract interaction with different DLT networks."
+                           description="Interface to abstract from interaction with different DLT networks."
                            />
                      </div>
                      <div class="col-sm-6">
                         <Element
                            :image="hub"
                            title="Wallet Hub"
-                           description="Enable a wallet service providers that will then route any ready-to-sign transaction."
+                           description="Enable a wallet service provider that will then route any ready-to-sign transaction."
                            />
                      </div>
                   </div>
@@ -101,14 +101,14 @@
                         <Element
                            :image="reusability"
                            title="DLT Broker"
-                           description="Provides a websocket connection that propagates any DLT event the user is subscribed."
+                           description="Provides a websocket connection that propagates any DLT event the user is subscribed to."
                            />
                      </div>
                      <div class="col-sm-6">
                         <Element
                            :image="simplify"
                            title="SDK"
-                           description="Provides a simplified consumption, minimizing the risk for errors and improving products quality."
+                           description="Provides a simplified consumption, minimizing the risk for errors and improving product quality."
                            />
                      </div>
                   </div>
@@ -142,7 +142,7 @@
                      </div>
                      <div class="col-sm-4">
                         <div class="add-padding">
-                           <a href="http://google.com" class="button">API DOCUMENTATION</a>
+                           <a href="https://bbva.github.io/hancock-dlt-adapter/api.html" class="button">API DOCUMENTATION</a>
                         </div>
                      </div>
                   </div>
