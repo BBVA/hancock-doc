@@ -66,6 +66,7 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          ['/guide/sdk/workflow/', 'Workflow'],
           ['/guide/sdk/nodejs/', 'NodeJs'],
           ['/guide/sdk/java/', 'Java/Android'],
           {
