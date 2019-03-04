@@ -2,6 +2,8 @@
 
 Hancock users can make use of Hancock SDKs to orchestrate the requests and events to and from Hancock components required to perform application level operations.
 
+To see an example of the main Hancock's workflows, take a look to next <a href="./workflow/">section</a>.
+
 ## Nodejs
 
 Sdk version to work with nodejs. To know more consult <a href="./nodejs/">Nodejs sdk</a>.

@@ -14,7 +14,7 @@
          </section>
          <section class="section second-section">
             <div class="content container second-text">
-               – NOT REQUIRE DEEP KNOWLEDGE OF DECENTRALISED SYSTEM -
+               – HANCOCK DOES NOT REQUIRE A DEEP KNOWLEDGE OF DECENTRALISED SYSTEMS -
             </div>
          </section>
          <section class="section third-section">
