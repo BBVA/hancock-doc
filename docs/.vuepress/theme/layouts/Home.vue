@@ -2,7 +2,7 @@
   <div class="home-page">
     <section class="section first-section">
       <NavbarHome/>
-      <div class="content container">
+      <div class="container">
         <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
         <h1 class="title">We provide
           <strong>simplicity, adaptability</strong> and
@@ -12,11 +12,11 @@
     </section>
     <section class="section second-section">
       <div
-        class="content container second-text"
+        class="container second-text"
       >– HANCOCK DOES NOT REQUIRE A DEEP KNOWLEDGE OF DECENTRALISED SYSTEMS -</div>
     </section>
     <section class="section third-section">
-      <div class="content container third-text">
+      <div class="container third-text">
         <div class="mini-title mini-blue">WELCOME TO NEW TECHNOLOGY</div>
         <hr>
       </div>
@@ -52,7 +52,7 @@
               <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
               <hr class="float-left no-margin-left">
               <div class="float-left">Hancock is a
-                <b>research product</b> conceived within BBVA - New Digital Businesses Research Lab.
+                <strong>research product</strong> conceived within BBVA - New Digital Businesses Research Lab.
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
       </div>
     </section>
     <section class="section forth-section">
-      <div class="content container">
+      <div class="container">
         <div class="mini-title mini-white">
           WHY EVERYONE
           <img src="../img/outline-icon.svg" class="Outline-Icon"> THIS?
@@ -73,9 +73,9 @@
         <hr class="hr-white">
         <div class="description-Copy">
           We facilitate the
-          <b>development on several DLTs</b>, simplifying the
-          <b>interaction</b> and
-          <b>abstracting</b> from their specific logic.
+          <strong>development on several DLTs</strong>, simplifying the
+          <strong>interaction</strong> and
+          <strong>abstracting</strong> from their specific logic.
         </div>
         <div class="elements-hancock">
           <div class="row border-bottom-grey">
@@ -114,31 +114,29 @@
       </div>
     </section>
     <section class="section fifth-section">
-      <div class="content container">
+      <div class="container">
         <div class="fifth-section-text">
           <div class="mini-title mini-blue">ABOUT US</div>
           <hr>
           <div>We are passionate about
-            <b>technology</b> and
-            <b>science</b>. We want to drive the shift our society needs.
+            <strong>technology</strong> and
+            <strong>science</strong>. We want to drive the shift our society needs.
             <div class="border-blue"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="section sixth-section">
-      <div class="content container add-padding">
+      <div class="container add-padding">
         <div class="rectangle-white">
           <div class="row">
-            <div class="col-xl-8">
-              <div class="description-Copy-5">Take the step to
-                <b>grow your business</b> in an easy and fast way
-              </div>
+            <div class="col-xl-8 add-padding description-Copy-5">
+               Take the step to <strong>grow your business</strong> in an easy and fast way
             </div>
             <div class="col-xl-4">
               <div class="add-padding">
                 <a
-                  href="https://bbva.github.io/hancock-dlt-adapter/api.html"
+                  href="./guide/"
                   class="button"
                 >API DOCUMENTATION</a>
               </div>
@@ -148,7 +146,7 @@
       </div>
     </section>
     <section class="section footer">
-      <div class="content container footer-row">
+      <div class="container footer-row">
         <div class="row">
           <div class="col-md-3">
             <img src="../img/group-22.svg" class="group-22">
@@ -210,22 +208,26 @@ a.button {
   text-align: center;
   white-space: nowrap;
   display: block;
+  text-decoration: none;
+  
 }
 
 .box1 {
   display: inline-block;
   position: relative;
-}
-.box1::before {
-  content: "";
-  display: block;
-  width: 42%;
-  height: 85%;
-  position: absolute;
-  left: 4px;
-  top: -15px;
-  border: 6px solid #00b9f7;
-  z-index: -1;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42%;
+    height: 85%;
+    position: absolute;
+    left: 4px;
+    top: -15px;
+    border: 6px solid #00b9f7;
+    z-index: -1;
+  }
 }
 
 .elements-hancock {
@@ -420,7 +422,7 @@ a.button {
   line-height: 1.5;
   letter-spacing: normal;
   color: #4d4d4e;
-  padding: 20px;
+  // padding: 20px;
   text-align: center;
 }
 
@@ -539,11 +541,17 @@ export default {
 </script>
 
 <style lang="scss">
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-
+@import "../styles/common";
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/navbar";
+
+.home-page {
+
+  .content:not(.custom) > *:first-child {
+    margin-top: 0 !important;
+    .content:not(.custom) {
+      padding: inherit;
+    }
+  }
+}
 </style>

@@ -72,8 +72,6 @@ Before signing our transactions, we need to insert a new row in mongodb, into "p
     "className" : "FakeProviderSigner"
 ```
 
-We have a specific option to configure Cryptvault like our signer, to that end, we need to fill the cryptvault environment vars of the config section.
-
 ## Using the service
 
 For more info, go to <a href="./Operations/">operations</a> facilitated by Wallet Hub component.

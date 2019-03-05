@@ -4,7 +4,7 @@
       <a class="navbar-brand hancock_icon_white" href="#"></a>
       <div>
         <ul class="navbar-nav">
-          <a class="nav-item nav-link active" href="/home/">Home</a>
+          <a class="nav-item nav-link active" href="/">Home</a>
           <a class="nav-item nav-link" href="/guide/">Docs</a>
           <a class="nav-item nav-link" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>
         </ul>
@@ -14,19 +14,25 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../styles/common";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+
 .navbar {
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 0px;
+  border: none !important;
+  height: auto !important;
 }
 
 .navbar-nav {
-  flex-direction: row;
+  flex-direction: row !important;
 
   .nav-item {
     font-size: 18px;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    color: #ffffff
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    color: #ffffff;
+    font-weight: bold;
   }
 }
 .nav-item:hover {

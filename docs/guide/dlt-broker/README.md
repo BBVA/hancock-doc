@@ -75,7 +75,7 @@ An example of configuration of the most important vars:
 
 The Hancock broker service is accessible by an standard web socket interface. You can test it in a browser console.
 
-To Know more consult <a href="./Options/">Broker options</a>. 
+To know more, consult <a href="./Options/">Broker options</a>. 
 
 ## Api documentation
 

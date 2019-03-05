@@ -3,6 +3,7 @@ module.exports = {
   themeConfig: {
     logo: '/logo.svg',
     nav: [
+      { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'Github', link: 'https://github.com/BBVA/hancock-dlt-adapter' },
     ],

@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar navbar-vuepress">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link
@@ -89,7 +89,7 @@ function css (el, property) {
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
-.navbar
+.navbar-vuepress
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   a, span, img
@@ -119,7 +119,7 @@ $navbar-horizontal-padding = 1.5rem
       vertical-align top
 
 @media (max-width: $MQMobile)
-  .navbar
+  .navbar-vuepress
     padding-left 4rem
     .can-hide
       display none
@@ -132,7 +132,7 @@ $color-1 = #32abd7
 $color-2 = #3a759f
 $textColor = #ffffff
 
-.navbar
+.navbar-vuepress
   display flex
   align-items center
   border none !important
