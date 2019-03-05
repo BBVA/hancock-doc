@@ -8,11 +8,11 @@ To see an example of the main Hancock's workflows, take a look to next <a href="
 
 ## Nodejs
 
-Sdk version to work with nodejs. To know more consult <a href="./nodejs/">Nodejs sdk</a>.
+SDK version to work with nodejs. To know more consult <a href="./nodejs/">Nodejs sdk</a>.
 
 ## Java
 
-Sdk version to work with java and android client. To know more consult <a href="./java/">Java sdk</a>.
+SDK version to work with java and android client. To know more consult <a href="./java/">Java sdk</a>.
 
 ## Services
 

@@ -1,11 +1,11 @@
 # Hancock DLT Broker
 
 Microservice belonging to Hancock's ecosystem which creates a subscription to the blockchain 
-watching for events related with some addresses or smart contracts
+watching for events related with some addresses or smart contracts.
 
 ## Motivation
 
-Because blockchain is an event-based system, data writing is asynchronous. To facilitate the management of these events to third parties, a service that allows standardized subscription through a client-server socket is required, thus serving the changes detected in the ledger by means of said socket.
+Because blockchain is an event-based system, data writing is asynchronous. To facilitate third parties to manage these events, a service that allows standardized subscription through a client-server socket is required, thus serving the changes detected in the ledger by means of said socket.
 
 ## Proposed Change
 
@@ -73,7 +73,7 @@ An example of configuration of the most important vars:
 
 ## Using the service
 
-The hancock broker service is accessible by an standard web socket interface. You can test it in a browser console.
+The Hancock broker service is accessible by an standard web socket interface. You can test it in a browser console.
 
 To Know more consult <a href="./Options/">Broker options</a>. 
 

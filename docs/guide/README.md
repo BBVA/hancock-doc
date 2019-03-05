@@ -11,7 +11,7 @@ Hancock is a research product conceived within <a href="https://www.bbva.com/ndb
 
 - [DLT Broker](./dlt-broker/) 
 
-We also offer a sdk that provides a simplified consumption of all Hancock services. Reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving product quality. You can read more about it in the [Hancock SDK](./sdk/) section.
+We also offer an SDK that provides a simplified consumption of all Hancock services. Reducing the time-to-market also ensures best practices, minimizing the risk for errors and improving product quality. You can read more about it in the [Hancock SDK](./sdk/) section.
 
 <img style="display: block; margin: 2rem auto" alt="hancock commponents"  src="../img/hancock_commponent.png">
 
@@ -21,13 +21,13 @@ Every blockchain has its own interfaces, even though they share a common functio
 
 Most applications have poor management of digital signatures, private keys and wallet management. A poor management of blockchain asynchronous nature, which also delays confirmations.
 
-Hancock is like a bridge for blockchains, which offers a sdk and an API to manage connections to blockchain, so you can focus on developing your bussiness application.
+Hancock is like a bridge for blockchains, which offers an SDK and an API to manage connections to blockchain, so you can focus on developing your bussiness application.
 
-## Why Hancock
+## Why the name
 
 John Hancock was the president of the Congress when the Declaration of Independence was adopted and signed. He is primarily remembered by Americans for his large, flamboyant signature on the Declaration, so much so that "John Hancock" became, in the United States, an informal synonym for signature.
 
-The digital signature is one of the most important benefits obtained with the immutable nature of blockchain. Hancock allow us to apply the digital signature in an easy way.
+Digital signatures are one of the most important cryptographic components of a blockchain. Hancock allows us to easily use digital signatures.
 
 ## Current blockchains supported
 
@@ -43,7 +43,7 @@ If you need to remember some basic concepts about blockchain technologies, you c
 
 ## Next steps
 
-We are working on integrating other blockchain networks to Hancock language. 
+We are working on integrating other blockchain networks to the Hancock ecosystem. 
 
-Next blockchain networks integrated:
+Next blockchain networks to be integrated are:
  - Bitcoin

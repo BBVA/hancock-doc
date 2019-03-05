@@ -1,6 +1,6 @@
 # Hancock Wallet hub
 
-This microservice belonging to Hancock's ecosystem, allows you to send transactions to DLT and to sign the transactions with the help of a sign provider service previously configured.
+This microservice belonging to Hancock's ecosystem, allows you to send transactions to a DLT and to sign the transactions with the help of a sign provider service previously configured.
 
 ## Motivation
 
@@ -8,7 +8,7 @@ To be able to sign transactions in blockchain we need a private key. To avoid ce
 
 ## Proposed Change
 
-In order to have different signature providers, we need to add a service to the system that will allow suppliers to be registered, making it possible for the system to be able to consume them, thus allowing a user to choose their signature provider.
+In order to have different signature providers, we need to add a service to the system that will allow suppliers to be registered, making it possible for the system to be able to consume them, thus allowing a user to choose their signature provider. The signing keys will not leave those signature providers.
 
 ## Current blockchains supported
 
@@ -45,7 +45,7 @@ With docker:
 ```
 ## Setting up the service
 
-Once the installation of the service have finished, we need to fix some environment vars. You can find all environment vars
+Once the installation of the service has finished, we need to fix some environment vars. You can find all environment vars
 available to configure the service in config/custom-environment-variables.yaml.
 
 An example of configuration of the most important vars:
@@ -63,9 +63,9 @@ An example of configuration of the most important vars:
   export HANCOCK_DB_ETHEREUM_DATABASE="hancock_eth"  
 ```
 
-Select a sign provider
+Select a signature provider
 
-Before sign our transactions, we need to insert a new row in mongodb, into "providers" collection with the data of our signer.
+Before signing our transactions, we need to insert a new row in mongodb, into "providers" collection with the data of our signer.
 
 ```bash
     "alias" : "fakeprovider"
@@ -80,7 +80,7 @@ For more info, go to <a href="./Operations/">operations</a> facilitated by Walle
 
 ## Api documentation
 
-Wallet-HUB provides some endpoints to interact with the blockchain, allowing send and sing transactions with an external signer to a specific DLT. Take a look at the diferent sections of the API documentation to see examples of use.
+Wallet-HUB provides some endpoints to interact with the blockchain, allowing sending and signing transactions with an external signer to a specific DLT. Take a look at the diferent sections of the API documentation to see examples of use.
 
 <a href="https://bbva.github.io/hancock-wallet-hub/api.html">API Documentation</a>
 

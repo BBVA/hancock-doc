@@ -4,7 +4,7 @@ Hancock gives us a standard codification of messages to work with transactions a
 
 ## Encode
 
-The encode operation, transforms all the data about transfer operations to a raw parameter. The responds can be used to generate a QR code that can be read to generate a predefined transfer operation.
+The encode operation, transforms all the data about transfer operations to a raw parameter. The response can be used to generate a QR code that can be read to generate a predefined transfer operation.
 
 You will need the following data to generate the code, before calling the API:
  - Action: The kind of action that will invoke on DLT network, in our case a "transfer".

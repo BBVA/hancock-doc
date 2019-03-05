@@ -2,7 +2,7 @@
 
 Facilitate a simple interface to work with a special case of Ethereum smart contracts, with a common ERC20 interface. ERC20 is a standard smart contract template for Ethereum fungible tokens. More info <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">here</a>.
 
-To work with this token, we need an ERC20 contract deployed. To operate with the contract, we can register it in Hancock, (anyway we can use all operations with any contract deployed, if we add <i>"smartContractAddress"</i> parameter in body request, with the contract address on it, and delete {AddressAlias} parameter in path).
+To work with this token, we need to deploy an ERC20 contract. To operate with the contract, we can register it in Hancock, (anyway we can use all operations with any deployed contract, if we add <i>"smartContractAddress"</i> parameter in body request, with the contract address on it, and delete {AddressAlias} parameter in path).
 
 ## Register
 

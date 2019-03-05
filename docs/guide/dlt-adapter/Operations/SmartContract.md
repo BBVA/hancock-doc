@@ -1,10 +1,10 @@
 # SmartContract
 
-Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. The DLT Adapter offers a set of API operations to manage all options with smart contracts in a DLT network.
+Smart contracts allow running credible transactions without third parties. These transactions are trackable and irreversible. The DLT Adapter offers a set of API operations to manage all options with smart contracts in a DLT network.
 
 ## Deploy Smart Contract
 
-First of all, we need to check the available accounts and select the address with enough balance to operate with. This is explained in the <a href="./Common/">Common</a> section.
+First of all, we need to check the available accounts and select an address with enough balance to operate with. This is explained in the <a href="./Common/">Common</a> section.
 
 Once we have our smart contract developed, we can adapt a Smart Contract deployment order to get the response raw to deploy the smart contract on DLT network. We need:
  - A raw serialized binary compilation
@@ -17,7 +17,7 @@ You can see the technical documentation, and an example of the call <a href="htt
 
 To deploy the adapted deployment transaction, we can use the <i>send transaction</i> call of the <a href="../wallet-hub/">Wallet-Hub</a> component to finish the deployment.
 
-To check the smart contract deployment transaction, we can call the <a href="../dlt-broker/">Dlt Broker</a> component, with the selected address as <i>sender</i> to get the contract address.
+To locate the smart contract deployment transaction, we can call the <a href="../dlt-broker/">DLT Broker</a> component, with the selected address as <i>sender</i> to get the contract address.
 
 Once the contract address is saved, you will need to register the smart contract.
 
@@ -42,4 +42,4 @@ We can adapt the invoke order to get the response raw to invoke an operation of 
 
 You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-of-smartcontract">here</a>.
 
-Anyway we can operate with contract deployments on a DLT network without registering the contract beforehand in Hancock. In that case, apart from the parameters, we need the ABI of the contract Check <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-with-abit">the technical call</a> to know more details.
+Anyway, we can operate with smart contract deployed on a DLT network without registering the contract beforehand in Hancock. In that case, apart from the parameters, we need the ABI of the contract Check <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-invocation-method-with-abit">the technical call</a> to know more details.

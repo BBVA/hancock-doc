@@ -1,6 +1,6 @@
 # Hancock DLT Adapter
 
-Microservice belonging to Hancock's ecosystem, which adapts transactions described in a common schema to the different blockchain implementatations' internal schemas.
+Microservice belonging to Hancock's ecosystem, which adapts transactions described in a common schema to the different blockchain implementations internal schemas.
 
 ## Motivation
 

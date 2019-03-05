@@ -4,7 +4,7 @@ This section describes the main Hancock's workflows, to understand the integrati
 
 ## Get balance
 
-We can make a petition to Hancock to get the balance of an specific account.
+We can make a petition to Hancock to get the <i>balance</i> of an specific account.
 
 Our example start in the client application, calling the get-balance method of [Wallet service](../services/Wallet#get-balance):
 
@@ -21,21 +21,21 @@ The activity flow under this interaction is the following:
 
 <img style="display: block; margin: 2rem auto" alt="Hancock transfer flow"  src="../../../img/hancock_balance.png">
 
-We make a call to dlt network through the Dlt-Adapter component, and return the balance of the account.
+We make a call to the DLT network through the DLT-Adapter component, and return the balance of the account.
 
 This operation dont need to make modifications on the network, the action does not consume any fees.
 
 ## Transaction
 
-A blockchain transaction of kind "transfer" (that sends some network-native tokens from the sender account to the destination account).
+A blockchain transaction of type <i>"transfer"</i> (that sends some network-native tokens from the sender account to the destination account).
 
-Can see the complete example on [getting-started](../../getting-started/#basic-example) section.
+The complete example is available in the [getting-started](../../getting-started/#basic-example) section.
 
 ## Smartcontract
 
-We can invoke any operation of a smart contract deployed on a dlt network.
+We can invoke any operation of a smart contract deployed on a DLT network.
 
-Once we have deployed and registered our contract, we can call the invoke method of [SmartContract service](../services/SmartContract.html#invoke-a-smart-contract):
+Once we have deployed and registered our contract, we can call the <i>invoke</i> method of [SmartContract service](../services/SmartContract.html#invoke-a-smart-contract):
 
 ```java
 
@@ -47,7 +47,7 @@ Once we have deployed and registered our contract, we can call the invoke method
   hancockClient.getSmartContractService().invoke(contractAddressOrAlias, method, params, from);
 
 ```
-The operation write on dlt network, the action consumes fees, and we need wait to be mined.
+The write operation on a DLT network consumes fees and we need to wait for it to be mined.
 
 First of all we need to subscribe to be able to listen the final response. In the first phase, our invoke is adapted and confirmed with the abi model. This process is taking place in the DLT Adapter microservice.
 

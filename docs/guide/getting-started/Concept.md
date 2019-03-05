@@ -1,6 +1,6 @@
 # Concepts
 
-Hancock offers a sdk (Software Development Kit) and an API (Application Programming Interface) to manage connections and operations on blockchain networks. But before knowing all Hancock services, you need to be au fait with the basic concepts of blockchain.
+Hancock offers an sdk (Software Development Kit) and an API (Application Programming Interface) to manage connections and operations on blockchain networks. But before knowing all Hancock services, you need to be au fait with the basic concepts of blockchain.
 
 ## Dlt or Blockchain
 

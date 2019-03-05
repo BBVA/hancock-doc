@@ -75,9 +75,9 @@
                <hr class="hr-white">
                <div class="description-Copy ">
                   We facilitate the
-                  <b>development on DLT</b>, simplifying the
+                  <b>development on several DLTs</b>, simplifying the
                   <b>interaction</b> and
-                  <b>abstracting</b> from the specific logic of each one of them.
+                  <b>abstracting</b> from their specific logic.
                </div>
                <div class="elements-hancock">
                   <div class="row border-bottom-grey">
