@@ -121,7 +121,7 @@
           <div>We are passionate about
             <strong>technology</strong> and
             <strong>science</strong>. We want to drive the shift our society needs.
-            <div class="border-blue"></div>
+            <div id="team" class="border-blue"></div>
           </div>
         </div>
       </div>
@@ -170,6 +170,29 @@
 </template>
 
 <style lang="scss" scoped>
+
+#team {
+  background-image: url('../img/team_a.jpeg');
+  background-size: cover;
+  background-position: center;
+  
+  width: 70%;
+  padding-bottom: 45%;
+
+  display: block;
+  margin-top: 30px;
+  border: 6px solid #00b9f7;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  transition: all 0.5s 0s ease-in-out;
+
+  &:hover {
+    background-image: url('../img/team_b.jpeg');
+  }
+}
+
 .footer-base {
   border-top: 1px solid grey;
 }
@@ -276,17 +299,6 @@ a.button {
   width: 37px;
   height: 38px;
   object-fit: contain;
-}
-
-.border-blue {
-  display: block;
-  margin-top: 30px;
-  width: 60%;
-  height: 200px;
-  border: 6px solid #00b9f7;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
 }
 
 .footer-row {
