@@ -1,185 +1,179 @@
 <template>
-   <div>
-      <section class="section">
-         <section class="section first-section">
-            <NavbarHome/>
-            <div class="content container">
-               <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
-               <h1 class="We-provide-simplicit">
-                  WE PROVIDE
-                  <b>SIMPLICITY, ADAPTABILITY</b> AND
-                  <b>EFFICIENCY</b> TO DEVELOP IN ANY DLT
-               </h1>
+  <div class="home-page">
+    <section class="section first-section">
+      <NavbarHome/>
+      <div class="content container">
+        <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
+        <h1 class="title">We provide
+          <strong>simplicity, adaptability</strong> and
+          <strong>efficiency</strong> to develop in any dlt
+        </h1>
+      </div>
+    </section>
+    <section class="section second-section">
+      <div
+        class="content container second-text"
+      >– HANCOCK DOES NOT REQUIRE A DEEP KNOWLEDGE OF DECENTRALISED SYSTEMS -</div>
+    </section>
+    <section class="section third-section">
+      <div class="content container third-text">
+        <div class="mini-title mini-blue">WELCOME TO NEW TECHNOLOGY</div>
+        <hr>
+      </div>
+      <div class="container margin-bottom-40">
+        <div class="row">
+          <div class="col-md-4">
+            <Feature
+              :image="reusability"
+              title="Increase reusability"
+              description="Focus on your business and abstract yourself from the DLT."
+            />
+          </div>
+          <div class="col-md-4">
+            <Feature
+              :image="simplify"
+              title="SDK->Simplify"
+              description="Facilitate interactions to avoid complexity."
+            />
+          </div>
+          <div class="col-md-4">
+            <Feature
+              :image="cost"
+              title="Reducing cost, time and effort"
+              description="Elimination of repetitive and complex tasks."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container margin-bottom-40">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="margin-left">
+              <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
+              <hr class="float-left no-margin-left">
+              <div class="float-left">Hancock is a
+                <b>research product</b> conceived within BBVA - New Digital Businesses Research Lab.
+              </div>
             </div>
-         </section>
-         <section class="section second-section">
-            <div class="content container second-text">
-               – HANCOCK DOES NOT REQUIRE A DEEP KNOWLEDGE OF DECENTRALISED SYSTEMS -
+          </div>
+          <div class="col-md-6">
+            <div class="box1">
+              <img src="../img/fotolia.png" class="fotolia">
             </div>
-         </section>
-         <section class="section third-section">
-            <div class="content container third-text">
-               <div class="mini-title mini-blue">WELCOME TO NEW TECHNOLOGY</div>
-               <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section forth-section">
+      <div class="content container">
+        <div class="mini-title mini-white">
+          WHY EVERYONE
+          <img src="../img/outline-icon.svg" class="Outline-Icon"> THIS?
+        </div>
+        <hr class="hr-white">
+        <div class="description-Copy">
+          We facilitate the
+          <b>development on several DLTs</b>, simplifying the
+          <b>interaction</b> and
+          <b>abstracting</b> from their specific logic.
+        </div>
+        <div class="elements-hancock">
+          <div class="row border-bottom-grey">
+            <div class="col-md-6 border-right-grey">
+              <Element
+                :image="adapter"
+                title="DLT Adapter"
+                description="Interface to abstract from interaction with different DLT networks."
+              />
             </div>
-            <div class="container margin-bottom-40">
-               <div class="row">
-                  <div class="col-sm-4">
-                     <Feature
-                        :image="reusability"
-                        title="Increase reusability"
-                        description="Focus on your business and abstract yourself from the DLT."
-                        />
-                  </div>
-                  <div class="col-sm-4">
-                     <Feature
-                        :image="simplify"
-                        title="SDK->Simplify"
-                        description="Facilitate interactions to avoid complexity."
-                        />
-                  </div>
-                  <div class="col-sm-4">
-                     <Feature
-                        :image="cost"
-                        title="Reducing cost, time and effort"
-                        description="Elimination of repetitive and complex tasks."
-                        />
-                  </div>
-               </div>
+            <div class="col-md-6">
+              <Element
+                :image="hub"
+                title="Wallet Hub"
+                description="Enable a wallet service provider that will then route any ready-to-sign transaction."
+              />
             </div>
-            <div class="container margin-bottom-40">
-               <div class="row">
-                  <div class="col-sm-6">
-                     <div class="margin-left">
-                        <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
-                        <hr class="float-left no-margin-left">
-                        <div class="float-left">
-                           Hancock is a <b>research product</b> conceived within BBVA - New Digital Businesses Research Lab.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                     <div class="box1">
-                        <img src="../img/fotolia.png" class="fotolia">
-                     </div>
-                  </div>
-               </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 border-right-grey">
+              <Element
+                :image="reusability"
+                title="DLT Broker"
+                description="Provides a websocket connection that propagates any DLT event the user is subscribed to."
+              />
             </div>
-         </section>
-         <section class="section forth-section">
-            <div class="content container">
-               <div class="mini-title mini-white">
-                  WHY EVERYONE
-                  <img src="../img/outline-icon.svg" class="Outline-Icon"> THIS?
-               </div>
-               <hr class="hr-white">
-               <div class="description-Copy ">
-                  We facilitate the
-                  <b>development on several DLTs</b>, simplifying the
-                  <b>interaction</b> and
-                  <b>abstracting</b> from their specific logic.
-               </div>
-               <div class="elements-hancock">
-                  <div class="row border-bottom-grey">
-                     <div class="col-sm-6 border-right-grey">
-                        <Element
-                           :image="adapter"
-                           title="DLT Adapter"
-                           description="Interface to abstract from interaction with different DLT networks."
-                           />
-                     </div>
-                     <div class="col-sm-6">
-                        <Element
-                           :image="hub"
-                           title="Wallet Hub"
-                           description="Enable a wallet service provider that will then route any ready-to-sign transaction."
-                           />
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-sm-6 border-right-grey">
-                        <Element
-                           :image="reusability"
-                           title="DLT Broker"
-                           description="Provides a websocket connection that propagates any DLT event the user is subscribed to."
-                           />
-                     </div>
-                     <div class="col-sm-6">
-                        <Element
-                           :image="simplify"
-                           title="SDK"
-                           description="Provides a simplified consumption, minimizing the risk for errors and improving product quality."
-                           />
-                     </div>
-                  </div>
-               </div>
+            <div class="col-md-6">
+              <Element
+                :image="simplify"
+                title="SDK"
+                description="Provides a simplified consumption, minimizing the risk for errors and improving product quality."
+              />
             </div>
-         </section>
-         <section class="section fifth-section">
-            <div class="content container">
-                <div class="fifth-section-text">
-                    <div class="mini-title mini-blue">
-                        ABOUT US
-                    </div>  
-                    <hr>
-                    <div>
-                        We are passionate about <b>technology</b> and <b>science</b>. We want to drive the shift our society needs.
-                    <div class="border-blue">
-
-                    </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section fifth-section">
+      <div class="content container">
+        <div class="fifth-section-text">
+          <div class="mini-title mini-blue">ABOUT US</div>
+          <hr>
+          <div>We are passionate about
+            <b>technology</b> and
+            <b>science</b>. We want to drive the shift our society needs.
+            <div class="border-blue"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section sixth-section">
+      <div class="content container add-padding">
+        <div class="rectangle-white">
+          <div class="row">
+            <div class="col-xl-8">
+              <div class="description-Copy-5">Take the step to
+                <b>grow your business</b> in an easy and fast way
+              </div>
             </div>
-        </section>
-         <section class="section sixth-section">
-            <div class="content container add-padding">
-               <div class="rectangle-white">
-                  <div class="row">
-                     <div class="col-sm-8">
-                        <div class="description-Copy-5">
-                           Take the step to <b>grow your business</b> in an easy and fast way
-                        </div>
-                     </div>
-                     <div class="col-sm-4">
-                        <div class="add-padding">
-                           <a href="https://bbva.github.io/hancock-dlt-adapter/api.html" class="button">API DOCUMENTATION</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="col-xl-4">
+              <div class="add-padding">
+                <a
+                  href="https://bbva.github.io/hancock-dlt-adapter/api.html"
+                  class="button"
+                >API DOCUMENTATION</a>
+              </div>
             </div>
-         </section>
-         <section class="section footer">
-            <div class="content container footer-row">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="../img/group-22.svg" class="group-22">
-                    </div>
-                    <div class="col-sm-3">
-                        <a>POLICY COOKIES</a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a>TERMS & CONDITIONS</a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a>PERSONAL DATA PROTECTION POLICY</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-base">
-                <div class="bbva">
-                    © Banco Bilbao Vizcaya Argentaria, S.A. 2018
-                </div>
-            </div>
-         </section>
-      </section>
-   </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section footer">
+      <div class="content container footer-row">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../img/group-22.svg" class="group-22">
+          </div>
+          <div class="col-md-3">
+            <a>POLICY COOKIES</a>
+          </div>
+          <div class="col-md-3">
+            <a>TERMS & CONDITIONS</a>
+          </div>
+          <div class="col-md-3">
+            <a>PERSONAL DATA PROTECTION POLICY</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-base">
+        <div class="bbva">© Banco Bilbao Vizcaya Argentaria, S.A. 2018</div>
+      </div>
+    </section>
+  </div>
 </template>
 
-<style lang="css" scoped>
-
+<style lang="scss" scoped>
 .footer-base {
-    border-top: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
 .bbva {
@@ -195,57 +189,27 @@
   padding: 20px;
 }
 
-.hancock_icon_white {
-  opacity: 1 !important;
-  object-fit: contain;
-  background-image: url("../img/hancock_home.svg");
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 224px;
-  height: 42px;
-}
-
-.SUPPORT {
-  width: 80px;
-  height: 24px;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.API-DOC {
-  width: 71px;
-  height: 24px;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
 a {
   text-shadow: none !important;
 }
 
+strong, b {
+   font-weight: bold;
+}
+
 a.button {
-    color: white;
-    background-color: #ff1654;
-    border-radius: 5px;
-    padding: 8px;  
-    font-size: 14px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
+  color: white;
+  background-color: #ff1654;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
 }
 
 .box1 {
@@ -253,31 +217,32 @@ a.button {
   position: relative;
 }
 .box1::before {
-    content: '';
-    display: block;
-    width: 42%;
-    height: 85%;
-    position: absolute;
-    left: 4px;
-    top: -15px;
-    border: 6px solid #00b9f7;
-    z-index: -1;
+  content: "";
+  display: block;
+  width: 42%;
+  height: 85%;
+  position: absolute;
+  left: 4px;
+  top: -15px;
+  border: 6px solid #00b9f7;
+  z-index: -1;
 }
 
 .elements-hancock {
-    box-shadow: 0 12px 42px 12px rgba(0, 0, 0, 0.08), 0px 7px 11px 1px rgba(0, 0, 0, 0.3);
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 50px;
+  box-shadow: 0 12px 42px 12px rgba(0, 0, 0, 0.08),
+    0px 7px 11px 1px rgba(0, 0, 0, 0.3);
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50px;
 }
 
 .add-padding {
-    padding: 20px;
+  padding: 20px;
 }
 
-.elements-hancock .col-sm-6 {
+.elements-hancock > div {
   background-color: white;
 }
 
@@ -295,42 +260,42 @@ a.button {
 }
 
 .fifth-section-text {
-    text-align: center;
-    padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .fotolia {
-    width: 70%;
-    margin-left: 20px;
-    object-fit: contain;
+  width: 70%;
+  margin-left: 20px;
+  object-fit: contain;
 }
 
 .Outline-Icon {
-    width: 37px;
-    height: 38px;
-    object-fit: contain;
+  width: 37px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .border-blue {
-    display: block;
-    margin-top: 30px;
-    width: 60%;
-    height: 200px;
-    border: 6px solid #00b9f7;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
+  display: block;
+  margin-top: 30px;
+  width: 60%;
+  height: 200px;
+  border: 6px solid #00b9f7;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .footer-row {
-    width: 70%;
-    padding: 20px;
+  width: 70%;
+  padding: 20px;
 }
 
-.footer a{
-    font-size: 10px;
-    color: #f4f4f4;
-    vertical-align: bottom;
+.footer a {
+  font-size: 10px;
+  color: #f4f4f4;
+  vertical-align: bottom;
 }
 
 .borders-copy-2 {
@@ -358,23 +323,27 @@ a.button {
 
 .first-section {
   background-image: url("../img/bg.svg");
-  background-size: auto;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+     padding: 20px 0;
+  }
 }
 .second-section {
   background-color: #00b9f7;
 }
 
 .hancock-icon-blue {
-  object-fit: contain;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   width: 120px;
 }
 
-.We-provide-simplicit {
+.title {
+  padding-top: 20px;
   width: 60%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   font-family: Quicksand;
@@ -383,66 +352,64 @@ a.button {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  margin: 0 auto;
 }
 
 .second-text {
-    font-size: 18px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Open Sans';
+  font-size: 18px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans";
 }
 
 .mini-title {
-    font-size: 28px;
-    margin-top: 50px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    font-family: Quicksand;
+  font-size: 28px;
+  margin-top: 50px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: Quicksand;
 }
 
 .mini-blue {
-    color: #005792;
+  color: #005792;
 }
 
 .mini-white {
-    color: white;
+  color: white;
 }
 
-.rectangle-white {    
-    width: 60%;
-    border-radius: 8px;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.rectangle-white {
+  width: 60%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .description-Copy {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description-Copy-5 {
@@ -457,38 +424,41 @@ a.button {
   text-align: center;
 }
 
-hr { 
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-top: 2px solid #00b9f7;
-    width: 120px;
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-top: 2px solid #00b9f7;
+  width: 120px;
 }
 
-.hr-white { 
-    border-top: 2px solid white;
+.hr-white {
+  border-top: 2px solid white;
 }
 
 .forth-section {
+  padding-top: 20px;
   background-image: url("../img/bitmap.png");
   background-size: auto;
   background-attachment: fixed;
 }
 
 .fifth-section {
+  padding-top: 20px;
   background-color: #f4f4f4;
 }
 
 .sixth-section {
-    background-image: url("../img/bitmap_2.png");
-    background-size: cover;
+  background-image: url("../img/bitmap_2.png");
+  background-size: cover;
 }
 
 .footer {
-    background-color: #606971;
+  background-color: #606971;
+  color: #fff;
 }
 
 .group-22 {
@@ -498,7 +468,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .We-provide-simplicit {
+  .title {
     width: 100%;
   }
 
@@ -508,16 +478,16 @@ hr {
   }
 
   .small-screen-root {
-    text-align: center!important;
+    text-align: center !important;
     margin-top: -30px;
   }
 
-  .no-margin-left{
+  .no-margin-left {
     margin-left: auto;
   }
 
-  .elements-hancock{
-      width: 80%;
+  .elements-hancock {
+    width: 80%;
   }
 
   .element {
@@ -529,15 +499,14 @@ hr {
     padding-bottom: 10px;
   }
 
-  .border-right-grey{
-      border: 0px;
+  .border-right-grey {
+    border: 0px;
   }
 
   .border-bottom-grey {
-      border: 0px;
+    border: 0px;
   }
 }
-
 </style>
 
 <script>
@@ -569,7 +538,12 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped> 
-  @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
-  @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css");
+<style lang="scss">
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/navbar";
 </style>

@@ -21,6 +21,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "vuepress": "^1.0.0-alpha.40"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "install": "^0.12.2",
+    "npm": "^6.8.0"
   }
 }
