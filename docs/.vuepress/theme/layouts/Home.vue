@@ -568,7 +568,8 @@ export default {
   }
 };
 </script>
-<style> 
+
+<style lang="stylus" scoped> 
   @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
   @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css");
 </style>
