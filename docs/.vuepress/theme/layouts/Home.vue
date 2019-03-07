@@ -151,14 +151,17 @@
           <div class="col-md-3">
             <img src="../img/group-22.svg" class="group-22">
           </div>
-          <div class="col-md-3">
-            <a>POLICY COOKIES</a>
+          <div class="col-md-2">
+            <a target="_blank" href="https://help.github.com/en/articles/github-terms-of-service">Terms of Use</a>
           </div>
-          <div class="col-md-3">
-            <a>TERMS & CONDITIONS</a>
+          <div class="col-md-2">
+            <a target="_blank" href="https://help.github.com/articles/github-privacy-policy/">Privacy</a>
           </div>
-          <div class="col-md-3">
-            <a>PERSONAL DATA PROTECTION POLICY</a>
+          <div class="col-md-2">
+            <a target="_blank" href="https://github.com/BBVA/hancock-dlt-broker/blob/master/LICENSE">License Apache 2.0</a>
+          </div>
+          <div class="col-md-2">
+            <a target="_blank" href="https://github.com/BBVA/hancock-dlt-broker/blob/master/CONTRIBUTING.md">Contributing</a>
           </div>
         </div>
       </div>
@@ -198,14 +201,14 @@
 }
 
 .bbva {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.83;
   letter-spacing: normal;
   text-align: center;
-  color: #999999;
+  color: #bbb;
   text-align: center;
   padding: 20px;
 }
@@ -307,7 +310,8 @@ a.button {
 }
 
 .footer a {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
   color: #f4f4f4;
   vertical-align: bottom;
 }
@@ -467,7 +471,8 @@ hr {
 
 .sixth-section {
   background-image: url("../img/bitmap_2.png");
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .footer {
