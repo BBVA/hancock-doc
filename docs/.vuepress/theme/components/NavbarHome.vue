@@ -4,8 +4,8 @@
       <a class="navbar-brand hancock_icon_white" href="#"></a>
       <div>
         <ul class="navbar-nav">
-          <a class="nav-item nav-link active" href="/">Home</a>
-          <a class="nav-item nav-link" href="/guide/">Docs</a>
+          <a class="nav-item nav-link active" href="./">Home</a>
+          <a class="nav-item nav-link" href="./guide/">Docs</a>
           <a class="nav-item nav-link" href="mailto:cryptvault.support.group@bbva.com" target="_top">Support</a>
         </ul>
       </div>

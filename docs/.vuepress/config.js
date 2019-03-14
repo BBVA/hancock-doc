@@ -1,5 +1,6 @@
 module.exports = {
   title: "Hancock",
+  base: "/hancock-doc/",
   themeConfig: {
     logo: '/logo.svg',
     nav: [
