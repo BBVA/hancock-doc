@@ -106,7 +106,7 @@ Use Hancock protocol to encode and decode operations and work with data on QR co
 
 For more info, go to <a href="./Operations/Protocol/">Protocol operations</a>. 
 
-## Api documentation
+## API documentation
 
 DLT Adapter provides some endpoints to interact with the blockchain, allowing to read and to adapt different operations on DLT network. Take a look at the different sections of the API documentation to see examples of use:
 

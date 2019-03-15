@@ -30,7 +30,7 @@ module.exports = {
           ['/guide/dlt-adapter/', 'Description'],
           {
             title: 'Operations',
-            path: '/guide/dlt-adapter/Operations/Common/',
+            path: '/guide/dlt-adapter/Operations/Common',
             collapsable: true,
             sidebarDepth: 1,
             children: [

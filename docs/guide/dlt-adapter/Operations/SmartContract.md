@@ -4,7 +4,7 @@ Smart contracts allow running credible transactions without third parties. These
 
 ## Deploy Smart Contract
 
-First of all, we need to check the available accounts and select an address with enough balance to operate with. This is explained in the <a href="./Common/">Common</a> section.
+First of all, we need to check the available accounts and select an address with enough balance to operate with. This is explained in the <a href="./Common">Common</a> section.
 
 Once we have our smart contract developed, we can adapt a Smart Contract deployment order to get the response raw to deploy the smart contract on DLT network. We need:
  - A raw serialized binary compilation
@@ -15,9 +15,9 @@ Once we have our smart contract developed, we can adapt a Smart Contract deploym
 
 You can see the technical documentation, and an example of the call <a href="https://bbva.github.io/hancock-dlt-adapter/api.html#adapt-deploy-smartcontract">here</a>.
 
-To deploy the adapted deployment transaction, we can use the <i>send transaction</i> call of the <a href="../wallet-hub/">Wallet-Hub</a> component to finish the deployment.
+To deploy the adapted deployment transaction, we can use the <i>send transaction</i> call of the <a href="../../wallet-hub/">Wallet-Hub</a> component to finish the deployment.
 
-To locate the smart contract deployment transaction, we can call the <a href="../dlt-broker/">DLT Broker</a> component, with the selected address as <i>sender</i> to get the contract address.
+To locate the smart contract deployment transaction, we can call the <a href="../../dlt-broker/">DLT Broker</a> component, with the selected address as <i>sender</i> to get the contract address.
 
 Once the contract address is saved, you will need to register the smart contract.
 

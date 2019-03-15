@@ -76,7 +76,7 @@ Before signing our transactions, we need to insert a new row in mongodb, into "p
 
 For more info, go to <a href="./Operations/">operations</a> facilitated by Wallet Hub component.
 
-## Api documentation
+## API documentation
 
 Wallet-HUB provides some endpoints to interact with the blockchain, allowing sending and signing transactions with an external signer to a specific DLT. Take a look at the diferent sections of the API documentation to see examples of use.
 
