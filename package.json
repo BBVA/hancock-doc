@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy:gh": "push-dir --dir=docs/.vuepress/dist --branch=gh-pages --cleanup --remote github"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.11.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "vuepress": "^1.0.0-alpha.40"
   },

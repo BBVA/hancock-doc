@@ -6,7 +6,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'Github', link: 'https://github.com/BBVA/hancock-dlt-adapter' },
+      { text: 'Github', link: 'https://github.com/BBVA?utf8=%E2%9C%93&q=hancock' },
     ],
     search: false,
     editLinks: false,
