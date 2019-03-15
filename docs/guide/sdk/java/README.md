@@ -13,7 +13,7 @@ dependencies {
 
 ## Using all together
 
-The main client is the [HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) class. You have to instantiate it passing an [HancockConfig](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) configuration object to indicate the client which hancock service it has to use.
+The main client is the [HancockEthereumClient](https://bbva.github.io/hancock-sdk-java-android/index.html) class. You have to instantiate it passing an [HancockConfig](https://bbva.github.io/hancock-sdk-java-android/index.html) configuration object to indicate the client which hancock service it has to use.
 
 Configuration object example:
 
@@ -33,5 +33,5 @@ EthereumClient client = new EthereumClient(config);
 
 ## Introduction and examples
 
-[HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) provides interfaces to interact with the blockchain 
-allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client-android/docs/index.html) to see examples of use.
+[HancockEthereumClient](https://bbva.github.io/hancock-sdk-java-android/index.html) provides interfaces to interact with the blockchain 
+allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://bbva.github.io/hancock-sdk-java-android/index.html) to see examples of use.

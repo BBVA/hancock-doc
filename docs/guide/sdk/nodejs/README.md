@@ -18,7 +18,7 @@ This package is distributed as a npm package:
 
 ## Using all together
 
-The main client is the [HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumclient.html) class. You have to instantiate it passing an [HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/interfaces/hancockconfig.html) configuration object
+The main client is the [HancockEthereumClient](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumclient.html) class. You have to instantiate it passing an [HancockEthereumClient](https://bbva.github.io/hancock-sdk-node/interfaces/hancockconfig.html) configuration object
 to indicate the client which hancock service it has to use.
 
 Configuration object example:
@@ -72,12 +72,12 @@ new HancockEthereumClient(config);
 
 ## Introduction and examples
 
-[HancockEthereumClient](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumclient.html) provides interfaces to interact with the blockchain 
-allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/index.html) to see examples of use:
+[HancockEthereumClient](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumclient.html) provides interfaces to interact with the blockchain 
+allowing common operation like transfers, balance consulting or smart contract interactions. Take a look at the diferent sections of the [docs](https://bbva.github.io/hancock-sdk-node/index.html) to see examples of use:
 
-- [HancockEthereumWalletService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumwalletclient.html)
-- [HancockEthereumTransferService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransferclient.html)
-- [HancockEthereumTransactionService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtransactionclient.html)
-- [HancockEthereumSmartContractService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumsmartcontractclient.html)
-- [HancockEthereumTokenService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumtokenclient.html)
-- [HancockProtocolService](https://docs.kickstartteam.es/blockchainhub/kst-hancock-sdk-client/docs/classes/hancockethereumprotocolclient.html)
+- [HancockEthereumWalletService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumwalletclient.html)
+- [HancockEthereumTransferService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumtransferclient.html)
+- [HancockEthereumTransactionService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumtransactionclient.html)
+- [HancockEthereumSmartContractService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumsmartcontractclient.html)
+- [HancockEthereumTokenService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumtokenclient.html)
+- [HancockProtocolService](https://bbva.github.io/hancock-sdk-node/classes/hancockethereumprotocolclient.html)
