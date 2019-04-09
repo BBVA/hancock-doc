@@ -4,20 +4,18 @@
       <NavbarHome/>
       <div class="container">
         <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
-        <h1 class="title">We provide
+        <h1 class="title">We look for
           <strong>simplicity, adaptability</strong> and
-          <strong>efficiency</strong> to develop in any dlt
+          <strong>efficiency</strong> to develop in any dlts
         </h1>
       </div>
     </section>
     <section class="section second-section">
-      <div
-        class="container second-text"
-      >– HANCOCK DOES NOT REQUIRE A DEEP KNOWLEDGE OF DECENTRALISED SYSTEMS -</div>
+      <div class="container second-text">– THE AIM OF HANCOCK IS TO REDUCE THE BARRIER FOR DEVELOPING DECENTRALISED SYSTEMS -</div>
     </section>
     <section class="section third-section">
       <div class="container third-text">
-        <div class="mini-title mini-blue">WELCOME TO NEW TECHNOLOGY</div>
+        <div class="mini-title mini-blue">WELCOME TO A NEW TECHNOLOGY</div>
         <hr>
       </div>
       <div class="container margin-bottom-40">
@@ -26,21 +24,21 @@
             <Feature
               :image="reusability"
               title="Increase reusability"
-              description="Focus on your business and abstract yourself from the DLT."
+              description="Focus on your development and abstract yourself from the DLT’s low-level details"
             />
           </div>
           <div class="col-md-4">
             <Feature
               :image="simplify"
               title="SDK->Simplify"
-              description="Facilitate interactions to avoid complexity."
+              description="Facilitate interactions to avoid complexity as much as possible"
             />
           </div>
           <div class="col-md-4">
             <Feature
               :image="cost"
               title="Reducing cost, time and effort"
-              description="Elimination of repetitive and complex tasks."
+              description="Pursue the elimination of repetitive and complex tasks"
             />
           </div>
         </div>
@@ -51,7 +49,7 @@
             <div class="margin-left">
               <div class="mini-title mini-blue float-left small-screen-root">ROOT</div>
               <hr class="float-left no-margin-left">
-              <div class="float-left">Hancock is a
+              <div class="float-left">Hancock is a 
                 <strong>research product</strong> conceived within BBVA - New Digital Businesses Research Lab.
               </div>
             </div>
@@ -66,16 +64,10 @@
     </section>
     <section class="section forth-section">
       <div class="container">
-        <div class="mini-title mini-white">
-          WHY EVERYONE
-          <img src="../img/outline-icon.svg" class="Outline-Icon"> THIS?
-        </div>
+        <div class="mini-title mini-white">OUR CONTRIBUTION</div>
         <hr class="hr-white">
         <div class="description-Copy">
-          We facilitate the
-          <strong>development on several DLTs</strong>, simplifying the
-          <strong>interaction</strong> and
-          <strong>abstracting</strong> from their specific logic.
+          We facilitate the <strong>development of DLT</strong> (Ethereum), simplifying the <strong>interaction</strong> and <strong>abstracting</strong> from their specific logic.
         </div>
         <div class="elements-hancock">
           <div class="row border-bottom-grey">
@@ -83,14 +75,14 @@
               <Element
                 :image="adapter"
                 title="DLT Adapter"
-                description="Interface to abstract from interaction with different DLT networks."
+                description="Interface to abstract from interaction with DLT network (Ethereum)"
               />
             </div>
             <div class="col-md-6">
               <Element
                 :image="hub"
                 title="Wallet Hub"
-                description="Enable a wallet service provider that will then route any ready-to-sign transaction."
+                description="Enable a wallet service provider that will then route any ready-to-sign transaction"
               />
             </div>
           </div>
@@ -99,14 +91,14 @@
               <Element
                 :image="reusability"
                 title="DLT Broker"
-                description="Provides a websocket connection that propagates any DLT event the user is subscribed to."
+                description="Provides a websocket connection that propagates DLT (Ethereum) event the user is subscribed to"
               />
             </div>
             <div class="col-md-6">
               <Element
                 :image="simplify"
                 title="SDK"
-                description="Provides a simplified consumption, minimizing the risk for errors and improving product quality."
+                description="Provides a simplified consumption, minimizing the risk for errors and improving product quality"
               />
             </div>
           </div>
@@ -118,9 +110,8 @@
         <div class="fifth-section-text">
           <div class="mini-title mini-blue">ABOUT US</div>
           <hr>
-          <div>We are passionate about
-            <strong>technology</strong> and
-            <strong>science</strong>. We want to drive the shift our society needs.
+          <div>
+            We are passionate about <strong>technology</strong> and <strong>science</strong>. We want to drive the shift our society needs.
             <div id="team" class="border-blue"></div>
           </div>
         </div>
@@ -131,7 +122,7 @@
         <div class="rectangle-white">
           <div class="row">
             <div class="col-xl-8 add-padding description-Copy-5">
-               Take the step to <strong>grow your business</strong> in an easy and fast way
+              Take the step to <strong>grow your development</strong> in an easier and faster way
             </div>
             <div class="col-xl-4">
               <div class="add-padding">
