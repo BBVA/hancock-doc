@@ -105,18 +105,6 @@
         </div>
       </div>
     </section>
-    <section class="section fifth-section">
-      <div class="container">
-        <div class="fifth-section-text">
-          <div class="mini-title mini-blue">ABOUT US</div>
-          <hr>
-          <div>
-            We are passionate about <strong>technology</strong> and <strong>science</strong>. We want to drive the shift our society needs.
-            <div id="team" class="border-blue"></div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="section sixth-section">
       <div class="container add-padding">
         <div class="rectangle-white">
