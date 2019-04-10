@@ -449,6 +449,7 @@ hr {
 }
 
 .sixth-section {
+  padding-top: 20px;
   background-image: url("../img/bitmap_2.png");
   background-size: 100%;
   background-repeat: no-repeat;
