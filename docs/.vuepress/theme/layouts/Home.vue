@@ -6,7 +6,7 @@
         <img src="../img/hancock-icon-blue.svg" class="hancock-icon-blue">
         <h1 class="title">We look for
           <strong>simplicity, adaptability</strong> and
-          <strong>efficiency</strong> to develop in any dlts
+          <strong>efficiency</strong> to develop in dlts
         </h1>
       </div>
     </section>
